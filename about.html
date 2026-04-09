@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>About Us | Simple Junk Removal | Coeur d'Alene & Spokane Brothers</title>
+  <meta name="description" content="Meet Frank and Romen — two brothers raised in Coeur d'Alene who built Simple Junk Removal on one promise: show up, do the work, and never let a neighbor down. Owner-operated junk removal serving CDA, Spokane & Post Falls." />
+  <meta name="keywords" content="Simple Junk Removal owners, junk removal Coeur d'Alene brothers, local junk removal CDA, owner operated junk removal Spokane, Frank and Romen junk removal, junk removal Post Falls Idaho" />
+  <link rel="canonical" href="https://simplejunkremoval.com/about" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://simplejunkremoval.com/about" />
+  <meta property="og:title" content="About Simple Junk Removal — Two Brothers From CDA" />
+  <meta property="og:description" content="Frank and Romen grew up in Coeur d'Alene and built a junk removal business on the values they were raised with. Owner on every job, owner on every call." />
+  <meta property="og:image" content="images/team-signs.jpg" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "AboutPage",
+    "name": "About Simple Junk Removal",
+    "url": "https://simplejunkremoval.com/about",
+    "mainEntity": {
+      "@type": "LocalBusiness",
+      "name": "Simple Junk Removal",
+      "telephone": "+15092516096",
+      "founders": [
+        { "@type": "Person", "name": "Frank" },
+        { "@type": "Person", "name": "Romen" }
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Coeur d'Alene",
+        "addressRegion": "ID",
+        "addressCountry": "US"
+      }
+    }
+  }
+  </script>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --green: #3dbe5c;
+      --green-dark: #2fa04d;
+      --black: #000000;
+      --body-text: #1a1a1a;
+      --gray-text: #777;
+      --light-bg: #f2f2f2;
+      --card-radius: 1.25rem;
+    }
+    * { box-sizing: border-box; }
+    body { font-family: 'Poppins', sans-serif; font-size: 1.1rem; line-height: 1.7; color: var(--body-text); background: #fff; }
+    a { text-decoration: none; color: inherit; }
+    img { max-width: 100%; height: auto; display: block; }
+
+    @keyframes pulse-green {
+      0%   { box-shadow: 0 0 0 0 rgba(61,190,92,0.55); }
+      70%  { box-shadow: 0 0 0 12px rgba(61,190,92,0); }
+      100% { box-shadow: 0 0 0 0 rgba(61,190,92,0); }
+    }
+    .btn-primary-custom {
+      display: inline-flex; align-items: center; justify-content: center;
+      background: var(--green); color: #000; border: 3px solid #000; border-radius: 10px;
+      min-width: 200px; min-height: 60px; font-family: 'Poppins', sans-serif;
+      font-size: 1.1rem; font-weight: 700; letter-spacing: -0.03em; padding: 0 2rem;
+      transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, transform .15s ease;
+      cursor: pointer; animation: pulse-green 2.2s ease-in-out infinite;
+    }
+    .btn-primary-custom:hover { background: #000; color: var(--green); border-color: #000; transform: translateY(-2px); animation: none; box-shadow: 0 8px 20px rgba(0,0,0,0.25); }
+    .header-cta { display:inline-flex; align-items:center; gap:8px; background:var(--green); color:#000; border:2px solid var(--green); border-radius:8px; padding:10px 22px; font-weight:700; font-size:0.95rem; white-space:nowrap; transition:background .15s,color .15s; }
+    .header-cta:hover { background:transparent; color:var(--green); }
+
+    /* HEADER */
+    #site-header { position: sticky; top: 0; z-index: 999; background: #000; padding: 14px 0; }
+    #site-header .logo img { height: 56px; width: auto; display: block; }
+    #primary-menu { list-style: none; margin: 0; padding: 0; display: flex; gap: 28px; align-items: center; }
+    #primary-menu a { color: #fff; font-weight: 600; font-size: 0.95rem; transition: color .15s; }
+    #primary-menu a:hover, #primary-menu a.active { color: var(--green); }
+    .header-phone { color: var(--green); font-size: 1rem; font-weight: 700; white-space: nowrap; }
+    .header-phone small { display: block; font-size: 0.65rem; color: #aaa; text-transform: uppercase; letter-spacing: 1px; }
+    .menu-toggle { display: none; background: none; border: none; cursor: pointer; padding: 4px; }
+    .menu-toggle span { display: block; width: 26px; height: 3px; background: #fff; margin: 5px 0; border-radius: 2px; }
+    #mobile-nav { position: fixed; top: 0; right: -220px; width: 200px; height: 100vh; background: rgba(0,0,0,.92); z-index: 9999; display: flex; flex-direction: column; padding: 80px 24px 40px; gap: 24px; transition: right .2s ease; }
+    #mobile-nav.open { right: 0; }
+    #mobile-nav a { color: #fff; font-size: 1rem; font-weight: 600; transition: color .15s; }
+    #mobile-nav a:hover { color: var(--green); }
+    #mobile-nav-close { position: absolute; top: 20px; right: 20px; background: none; border: none; color: #fff; font-size: 1.5rem; cursor: pointer; }
+    .mobile-overlay { display: none; position: fixed; inset: 0; background: rgba(0,0,0,.5); z-index: 9998; }
+    .mobile-overlay.open { display: block; }
+
+    /* PAGE HERO */
+    .page-hero {
+      background: #000 url('images/team-signs.jpg') center center / cover no-repeat;
+      position: relative;
+      padding: 100px 0 80px;
+      text-align: center;
+    }
+    .page-hero::after { content: ''; position: absolute; inset: 0; background: rgba(0,0,0,.75); }
+    .page-hero .inner { position: relative; z-index: 2; }
+    .page-hero .section-label { color: var(--green); font-size: 0.8rem; font-weight: 700; letter-spacing: 2.5px; text-transform: uppercase; margin-bottom: 12px; }
+    .page-hero h1 { font-size: clamp(2.2rem, 5vw, 3.5rem); font-weight: 700; color: #fff; line-height: 1.15; margin-bottom: 16px; }
+    .page-hero h1 span { color: var(--green); }
+    .page-hero p { font-size: 1.15rem; color: rgba(255,255,255,.8); max-width: 620px; margin: 0 auto; }
+
+    /* SECTION HELPERS */
+    .section-label { font-size: 0.8rem; font-weight: 700; letter-spacing: 2.5px; text-transform: uppercase; color: var(--green); margin-bottom: 10px; }
+    .section-title { font-size: clamp(1.8rem, 3.5vw, 2.75rem); font-weight: 600; line-height: 1.2; margin-bottom: 1rem; }
+    .section-title span { color: var(--green); }
+    .py-section { padding: 80px 0; }
+
+    /* STORY */
+    .story-img { border-radius: var(--card-radius); overflow: hidden; }
+    .story-img img { width: 100%; height: 500px; object-fit: cover; }
+    .story-lead { font-size: 1.2rem; font-weight: 600; color: var(--body-text); line-height: 1.7; margin-bottom: 1.25rem; }
+    .story-body { font-size: 1.05rem; color: #444; line-height: 1.8; }
+    .story-body p { margin-bottom: 1.25rem; }
+
+    /* VALUE CARDS */
+    .value-card {
+      background: #fff;
+      border: 1px solid #e8e8e8;
+      border-radius: var(--card-radius);
+      padding: 2rem 1.75rem;
+      height: 100%;
+      transition: border-color .2s, box-shadow .2s;
+    }
+    .value-card:hover { border-color: var(--green); box-shadow: 0 8px 24px rgba(61,190,92,.12); }
+    .value-icon { font-size: 2rem; margin-bottom: 1rem; }
+    .value-card h3 { font-size: 1.15rem; font-weight: 700; margin-bottom: .5rem; }
+    .value-card p { font-size: 0.95rem; color: var(--gray-text); margin: 0; line-height: 1.7; }
+
+    /* TEAM */
+    .team-card {
+      background: #fff;
+      border-radius: var(--card-radius);
+      overflow: hidden;
+      box-shadow: 0 0.5rem 1.5rem rgba(0,0,0,.1);
+      transition: transform .2s, box-shadow .2s;
+    }
+    .team-card:hover { transform: translateY(-4px); box-shadow: 0 1rem 2rem rgba(0,0,0,.12); }
+    .team-card img { width: 100%; height: 380px; object-fit: cover; object-position: top; }
+    .team-card-body { padding: 1.75rem; }
+    .team-card-body h3 { font-size: 1.4rem; font-weight: 700; margin-bottom: 4px; }
+    .team-card-body .role { color: var(--green); font-size: 0.9rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 1rem; }
+    .team-card-body p { font-size: 0.95rem; color: #555; line-height: 1.7; margin: 0; }
+
+    /* STAT BAR */
+    .stat-bar { background: var(--green); padding: 48px 0; }
+    .stat-item { text-align: center; }
+    .stat-item strong { display: block; font-size: 2.5rem; font-weight: 700; color: #fff; line-height: 1; }
+    .stat-item span { font-size: 0.9rem; color: rgba(255,255,255,.85); font-weight: 600; margin-top: 4px; display: block; }
+
+    /* PROMISE SECTION */
+    .promise-section { background: var(--light-bg); }
+    .promise-item { display: flex; gap: 16px; align-items: flex-start; margin-bottom: 1.5rem; }
+    .promise-icon { width: 48px; height: 48px; background: var(--green); border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 1.2rem; flex-shrink: 0; }
+    .promise-item h4 { font-size: 1.05rem; font-weight: 700; margin-bottom: 2px; }
+    .promise-item p { font-size: 0.9rem; color: var(--gray-text); margin: 0; line-height: 1.6; }
+
+    /* CTA */
+    .cta-section { background: #000; padding: 80px 0; text-align: center; }
+    .cta-section h2 { font-size: clamp(2rem, 4vw, 3rem); font-weight: 700; color: #fff; margin-bottom: 1rem; }
+    .cta-section p { font-size: 1.1rem; color: rgba(255,255,255,.7); margin-bottom: 2rem; }
+
+    /* FOOTER */
+    footer { background: #000; color: #fff; padding: 56px 0 28px; border-top: 1px solid #111; }
+    footer .logo img { height: 48px; margin-bottom: 1rem; }
+    footer p.footer-desc { color: rgba(255,255,255,.5); font-size: 0.9rem; line-height: 1.7; max-width: 280px; }
+    footer .footer-phone { display: block; font-size: 1.4rem; font-weight: 700; color: var(--green); margin-top: 1rem; }
+    footer h5 { font-size: 0.75rem; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: var(--green); margin-bottom: 1rem; }
+    footer ul { list-style: none; padding: 0; margin: 0; }
+    footer ul li { margin-bottom: .5rem; }
+    footer ul li a { color: rgba(255,255,255,.55); font-size: 0.9rem; transition: color .15s; }
+    footer ul li a:hover { color: var(--green); }
+    .footer-bottom { border-top: 1px solid #1a1a1a; padding-top: 20px; margin-top: 48px; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 8px; }
+    .footer-bottom p { color: rgba(255,255,255,.3); font-size: 0.78rem; margin: 0; }
+
+    .animatable { opacity: 0; transform: translateY(20px); transition: opacity .6s ease, transform .6s ease; }
+    .animatable.animated { opacity: 1; transform: translateY(0); }
+
+    @media (max-width: 991px) {
+      #primary-menu { display: none; }
+      .menu-toggle { display: block; }
+      .story-img { display: none; }
+    }
+    @media (max-width: 575px) {
+      .py-section { padding: 56px 0; }
+      .page-hero { padding: 70px 0 56px; }
+    }
+  </style>
+</head>
+<body>
+
+<div class="mobile-overlay" id="mobileOverlay" onclick="closeMobileNav()"></div>
+<nav id="mobile-nav">
+  <button id="mobile-nav-close" onclick="closeMobileNav()">✕</button>
+  <a href="services.html" onclick="closeMobileNav()">Services</a>
+  <a href="demo.html" onclick="closeMobileNav()">Demo &amp; Teardown</a>
+  <a href="trucks.html" onclick="closeMobileNav()">Our Trucks</a>
+  <a href="about.html" onclick="closeMobileNav()">About Us</a>
+  <a href="tel:5092516096" class="btn-primary-custom mt-3" style="min-width:auto;font-size:1rem;min-height:52px;">📞 Call 509-251-6096</a>
+</nav>
+
+<header id="site-header">
+  <div class="container">
+    <div class="d-flex align-items-center justify-content-between">
+      <a href="index.html" class="logo"><img src="images/logo.png" alt="Simple Junk Removal" /></a>
+      <nav class="d-none d-lg-flex">
+        <ul id="primary-menu">
+          <li><a href="services.html">Services</a></li>
+          <li><a href="demo.html">Demo &amp; Teardown</a></li>
+          <li><a href="trucks.html">Our Trucks</a></li>
+          <li><a href="about.html" class="active" style="color:#fff;">About Us</a></li>
+        </ul>
+      </nav>
+      <div class="d-flex align-items-center gap-3">
+        <a href="tel:5092516096" class="header-cta d-none d-md-inline-flex">📞 509-251-6096</a>
+        <button class="menu-toggle d-lg-none" onclick="openMobileNav()" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="container inner">
+    <p class="section-label">Our Story</p>
+    <h1>Two Brothers.<br /><span>One Standard.</span></h1>
+    <p>We grew up in Coeur d'Alene, and we built this business the same way we were raised — do your best, show up every time, and never let your neighbor down.</p>
+  </div>
+</section>
+
+<!-- OUR STORY -->
+<section class="py-section">
+  <div class="container">
+    <div class="row g-5 align-items-center">
+      <div class="col-lg-6 animatable story-img">
+        <div class="story-img">
+          <img src="images/team-signs.jpg" alt="Frank and Romen — Simple Junk Removal owners in Coeur d'Alene" style="object-fit:cover;object-position:center top;" />
+        </div>
+      </div>
+      <div class="col-lg-6 animatable">
+        <p class="section-label">Who We Are</p>
+        <h2 class="section-title">Born and Raised in <span>Coeur d'Alene</span></h2>
+        <div class="story-lead">
+          We're Frank and Romen — two brothers who grew up right here in North Idaho, raised by parents who taught us that the way you do anything is the way you do everything.
+        </div>
+        <div class="story-body">
+          <p>Growing up in CDA, we spent our time outdoors — hiking the trails around Lake Coeur d'Alene, fishing, and connecting with the people and places that make this area special. This valley isn't just where we work. It's home. And we take that seriously.</p>
+          <p>We started Simple Junk Removal because we kept hearing the same frustration from people in our community: you hire a junk removal company and either nobody shows up, the price doubles at the end, or some random crew shows up at your house and you have no idea who they are. That bothered us. So we built something different.</p>
+          <p>When you call Simple Junk Removal, an owner answers. When we show up to your job, an owner is there. You'll see the same faces that were on the other end of the phone. Every time. No exceptions.</p>
+          <p>We've done over 100 jobs — for homeowners, realtors, and contractors across Coeur d'Alene, Spokane, Post Falls, and every community in between. Every single one has rated us five stars. That's not something we take lightly. That's the standard we hold ourselves to on every job we do.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STAT BAR -->
+<div class="stat-bar">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-6 col-md-3 animatable"><div class="stat-item"><strong>100+</strong><span>Jobs Completed</span></div></div>
+      <div class="col-6 col-md-3 animatable"><div class="stat-item"><strong>5★</strong><span>Average Rating</span></div></div>
+      <div class="col-6 col-md-3 animatable"><div class="stat-item"><strong>24–48hr</strong><span>On-Site Guarantee</span></div></div>
+      <div class="col-6 col-md-3 animatable"><div class="stat-item"><strong>100%</strong><span>Owner-Operated</span></div></div>
+    </div>
+  </div>
+</div>
+
+<!-- TEAM -->
+<section class="py-section" style="background:#fff;">
+  <div class="container">
+    <div class="text-center mb-5 animatable">
+      <p class="section-label">The Team</p>
+      <h2 class="section-title">You Know <span>Exactly Who's Coming</span></h2>
+      <p style="color:var(--gray-text);max-width:520px;margin:0 auto;">No random crews. No subcontractors. When we pull up to your driveway, it's us — the same people who answered your call and gave you your quote.</p>
+    </div>
+    <div class="row g-4 justify-content-center">
+      <div class="col-md-5 animatable">
+        <div class="team-card">
+          <img src="images/team-frank.jpg" alt="Frank — Co-owner of Simple Junk Removal, Coeur d'Alene" style="object-fit:cover;object-position:center top;" />
+          <div class="team-card-body">
+            <h3>Frank</h3>
+            <div class="role">Co-Owner &amp; Operator</div>
+            <p>Frank grew up in Coeur d'Alene and has always led with his work ethic. Whether he's on a job site, out on the water, or in the mountains — he brings that same focus and drive to every job. He believes in doing things right the first time and making sure every customer feels taken care of.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-5 animatable">
+        <div class="team-card">
+          <img src="images/team-romen.jpg" alt="Romen — Co-owner of Simple Junk Removal, Coeur d'Alene" style="object-fit:cover;object-position:center top;" />
+          <div class="team-card-body">
+            <h3>Romen</h3>
+            <div class="role">Co-Owner &amp; Operator</div>
+            <p>Romen is the connector — the one who builds relationships, remembers names, and makes sure every interaction feels personal. He's passionate about the North Idaho and Spokane community and genuinely loves meeting the people who trust us with their homes and businesses. When he's not on a job, you'll find him outdoors — it's in his blood.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- OUR PROMISE -->
+<section class="py-section promise-section">
+  <div class="container">
+    <div class="row g-5 align-items-center">
+      <div class="col-lg-6 animatable">
+        <p class="section-label">What We Stand For</p>
+        <h2 class="section-title">How We're <span>Different</span></h2>
+        <p style="color:#444;margin-bottom:2rem;">Hiring a junk removal company shouldn't feel like a coin flip. You should know who's coming, what it costs, and that they're actually going to show up. Here's how we make that happen.</p>
+        <div class="promise-item">
+          <div class="promise-icon">📞</div>
+          <div><h4>Owner Answers Every Call</h4><p>No call centers, no voicemail purgatory. Frank or Romen picks up — directly — every time you call.</p></div>
+        </div>
+        <div class="promise-item">
+          <div class="promise-icon">🚛</div>
+          <div><h4>Owner On Every Job</h4><p>The person who gave you your quote is the person loading your truck. You always know who's on your property.</p></div>
+        </div>
+        <div class="promise-item">
+          <div class="promise-icon">💰</div>
+          <div><h4>Flat-Rate Upfront Quote</h4><p>We give you an exact number before we touch a single thing. The price you're quoted is the price you pay — full stop.</p></div>
+        </div>
+        <div class="promise-item">
+          <div class="promise-icon">⭐</div>
+          <div><h4>Five-Star Standard, Every Job</h4><p>We've never left a job without a five-star review. Not because we got lucky — because we won't leave until the job is done right.</p></div>
+        </div>
+        <div class="promise-item">
+          <div class="promise-icon">🏔️</div>
+          <div><h4>Rooted in This Community</h4><p>We're not a franchise. We're not a call center two states away. We're your neighbors — and that matters to us more than anything.</p></div>
+        </div>
+      </div>
+      <div class="col-lg-6 animatable">
+        <div style="background:#fff;border-radius:var(--card-radius);padding:2.5rem;box-shadow:0 8px 32px rgba(0,0,0,.08);">
+          <p class="section-label">Our Mission</p>
+          <h3 style="font-size:1.5rem;font-weight:700;margin-bottom:1.25rem;line-height:1.3;">The Real Product We Sell Is <span style="color:var(--green);">Relief</span> — Delivered by People Who Won't Let You Down</h3>
+          <p style="color:#444;font-size:1rem;line-height:1.8;margin-bottom:1.25rem;">There's a feeling you get when something you've been dreading is finally handled. The garage is clear. The shed is gone. The pile of junk you've been walking past for six months has disappeared. That's what we deliver.</p>
+          <p style="color:#444;font-size:1rem;line-height:1.8;margin-bottom:1.25rem;">We're big outdoors people — we love this part of the country and the people who call it home. When you bring us into your space, you're trusting us with something personal. We don't take that lightly.</p>
+          <p style="color:#444;font-size:1rem;line-height:1.8;margin-bottom:0;">We were raised to always do our best. That's not just a saying for us — it's how we run every job, every day.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- VALUES -->
+<section class="py-section" style="background:#fff;">
+  <div class="container">
+    <div class="text-center mb-5 animatable">
+      <p class="section-label">Core Values</p>
+      <h2 class="section-title">What We Believe In</h2>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-6 col-lg-4 animatable">
+        <div class="value-card">
+          <div class="value-icon">🤝</div>
+          <h3>Integrity Over Everything</h3>
+          <p>We quote it, we charge it. We say we'll be there, we're there. No exceptions, no excuses. That's the foundation everything else is built on.</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4 animatable">
+        <div class="value-card">
+          <div class="value-icon">🏆</div>
+          <h3>Excellence on Every Job</h3>
+          <p>Whether it's one couch or a full property cleanout, we bring the same effort and attention to detail. There's no such thing as a job too small to do right.</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4 animatable">
+        <div class="value-card">
+          <div class="value-icon">🏠</div>
+          <h3>Community First</h3>
+          <p>We live here, our families are here, and our reputation is tied to this community. Serving our neighbors well isn't just good business — it's who we are.</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4 animatable">
+        <div class="value-card">
+          <div class="value-icon">⚡</div>
+          <h3>Reliability You Can Count On</h3>
+          <p>We know your time matters. We show up when we say we will, we get the job done fast, and we don't leave until you're happy.</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4 animatable">
+        <div class="value-card">
+          <div class="value-icon">😌</div>
+          <h3>Simple. Easy. Done.</h3>
+          <p>We exist to take something off your plate, not add to it. You point. We remove it. The whole experience should feel effortless — because it is.</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4 animatable">
+        <div class="value-card">
+          <div class="value-icon">🌲</div>
+          <h3>Love for the Outdoors</h3>
+          <p>We're North Idaho guys. We love this land — the mountains, the lakes, the trails. We're careful with how we haul and dispose because this place deserves it.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICE AREA -->
+<section class="py-section" style="background:var(--light-bg);">
+  <div class="container">
+    <div class="text-center mb-4 animatable">
+      <p class="section-label">Where We Serve</p>
+      <h2 class="section-title">Proudly Serving <span>CDA, Spokane & All Points Between</span></h2>
+      <p style="color:var(--gray-text);max-width:560px;margin:0 auto;">We cover the entire corridor from Coeur d'Alene to Spokane and every community within reach. If you're within 25 miles of Post Falls, we're coming to you.</p>
+    </div>
+    <div class="row g-3 animatable justify-content-center" style="max-width:900px;margin:0 auto;">
+      <div class="col-6 col-md-4 col-lg-3" style="text-align:center;"><div style="background:#fff;border:1px solid #ddd;border-radius:10px;padding:12px;font-weight:600;font-size:0.95rem;">📍 Coeur d'Alene, ID</div></div>
+      <div class="col-6 col-md-4 col-lg-3" style="text-align:center;"><div style="background:#fff;border:1px solid #ddd;border-radius:10px;padding:12px;font-weight:600;font-size:0.95rem;">📍 Spokane, WA</div></div>
+      <div class="col-6 col-md-4 col-lg-3" style="text-align:center;"><div style="background:#fff;border:1px solid #ddd;border-radius:10px;padding:12px;font-weight:600;font-size:0.95rem;">📍 Post Falls, ID</div></div>
+      <div class="col-6 col-md-4 col-lg-3" style="text-align:center;"><div style="background:#fff;border:1px solid #ddd;border-radius:10px;padding:12px;font-weight:600;font-size:0.95rem;">📍 Hayden, ID</div></div>
+      <div class="col-6 col-md-4 col-lg-3" style="text-align:center;"><div style="background:#fff;border:1px solid #ddd;border-radius:10px;padding:12px;font-weight:600;font-size:0.95rem;">📍 Spokane Valley, WA</div></div>
+      <div class="col-6 col-md-4 col-lg-3" style="text-align:center;"><div style="background:#fff;border:1px solid #ddd;border-radius:10px;padding:12px;font-weight:600;font-size:0.95rem;">📍 Rathdrum, ID</div></div>
+      <div class="col-6 col-md-4 col-lg-3" style="text-align:center;"><div style="background:#fff;border:1px solid #ddd;border-radius:10px;padding:12px;font-weight:600;font-size:0.95rem;">📍 Liberty Lake, WA</div></div>
+      <div class="col-6 col-md-4 col-lg-3" style="text-align:center;"><div style="background:#fff;border:1px solid #ddd;border-radius:10px;padding:12px;font-weight:600;font-size:0.95rem;">📍 Spirit Lake, ID</div></div>
+      <div class="col-6 col-md-4 col-lg-3" style="text-align:center;"><div style="background:#fff;border:1px solid #ddd;border-radius:10px;padding:12px;font-weight:600;font-size:0.95rem;">📍 Dalton Gardens, ID</div></div>
+      <div class="col-6 col-md-4 col-lg-3" style="text-align:center;"><div style="background:#fff;border:1px solid #ddd;border-radius:10px;padding:12px;font-weight:600;font-size:0.95rem;">📍 Airway Heights, WA</div></div>
+      <div class="col-6 col-md-4 col-lg-3" style="text-align:center;"><div style="background:#fff;border:1px solid #ddd;border-radius:10px;padding:12px;font-weight:600;font-size:0.95rem;">📍 Deer Park, WA</div></div>
+      <div class="col-6 col-md-4 col-lg-3" style="text-align:center;"><div style="background:#fff;border:1px solid #ddd;border-radius:10px;padding:12px;font-weight:600;font-size:0.95rem;">📍 Cheney, WA</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="cta-section">
+  <div class="container animatable">
+    <h2>Ready to Work With Us?</h2>
+    <p>Call or text — an owner picks up every time. Free quote, no pressure, no surprises.</p>
+    <div class="d-flex flex-wrap gap-3 justify-content-center">
+      <a href="tel:5092516096" class="btn-primary-custom">📞 Call 509-251-6096</a>
+      <a href="sms:5092516096" class="btn-primary-custom" style="background:#1a1a1a;color:#fff;border-color:#333;">💬 Text Us</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-lg-5">
+        <a href="index.html" class="logo d-inline-block mb-2"><img src="images/logo.png" alt="Simple Junk Removal" /></a>
+        <p class="footer-desc">Owner-operated junk removal serving Coeur d'Alene, Spokane, Post Falls &amp; surrounding areas.</p>
+        <a href="tel:5092516096" class="footer-phone">509-251-6096</a>
+      </div>
+      <div class="col-6 col-lg-3">
+        <h5>Services</h5>
+        <ul>
+          <li><a href="services.html">Junk Removal</a></li>
+          <li><a href="services.html">Residential</a></li>
+          <li><a href="services.html">Commercial</a></li>
+          <li><a href="demo.html">Demo &amp; Teardown</a></li>
+          <li><a href="index.html#pricing">Pricing</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-lg-3">
+        <h5>Company</h5>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="index.html#reviews">Reviews</a></li>
+          <li><a href="index.html#areas">Service Areas</a></li>
+          <li><a href="index.html#faq">FAQ</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Simple Junk Removal. Coeur d'Alene, ID &amp; Spokane, WA.</p>
+      <p>Owned &amp; operated by Frank &amp; Romen.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  function openMobileNav() { document.getElementById('mobile-nav').classList.add('open'); document.getElementById('mobileOverlay').classList.add('open'); document.body.style.overflow='hidden'; }
+  function closeMobileNav() { document.getElementById('mobile-nav').classList.remove('open'); document.getElementById('mobileOverlay').classList.remove('open'); document.body.style.overflow=''; }
+  const observer = new IntersectionObserver((entries) => { entries.forEach(e => { if(e.isIntersecting){ e.target.classList.add('animated'); observer.unobserve(e.target); } }); }, { threshold: 0.1 });
+  document.querySelectorAll('.animatable').forEach(el => observer.observe(el));
+</script>
+</body>
+</html>

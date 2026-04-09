@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="500" height="500">
+
+  <!-- Black square background with rounded corners -->
+  <rect width="500" height="500" fill="#0d0d0d" rx="32"/>
+
+  <!-- "Simple" — forced to fit within 390px centered, so it never clips -->
+  <text
+    x="250" y="288"
+    font-family="'Arial Rounded MT Bold','Nunito','Helvetica Neue',Arial,sans-serif"
+    font-size="118" font-weight="900"
+    fill="#ffffff"
+    text-anchor="middle"
+    textLength="390" lengthAdjust="spacingAndGlyphs">Simple</text>
+
+  <!-- Green checkmark circle replacing the dot of the lowercase 'i' -->
+  <!-- 'i' is the 2nd character; with textLength=390 starting at x=55,
+       S≈80px wide → i starts at ~135, center at ~150 -->
+  <circle cx="152" cy="156" r="24" fill="#3dbe5c"/>
+  <polyline points="140,156 148,166 165,144"
+    stroke="white" stroke-width="3.8"
+    stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+
+  <!-- "JUNK REMOVAL" — forced to fit 420px so it never clips -->
+  <text
+    x="250" y="368"
+    font-family="'Arial Rounded MT Bold','Nunito','Helvetica Neue',Arial,sans-serif"
+    font-size="60" font-weight="900"
+    fill="#ffffff"
+    text-anchor="middle"
+    textLength="420" lengthAdjust="spacingAndGlyphs">
+    <tspan fill="#3dbe5c">JUNK </tspan><tspan fill="#ffffff">REMOVAL</tspan>
+  </text>
+
+</svg>
