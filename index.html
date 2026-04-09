@@ -852,20 +852,98 @@
     @media (max-width: 991px) {
       #primary-menu { display: none; }
       .menu-toggle { display: block; }
-      #hero h1 { font-size: calc(3.5rem * .7); }
-      .section-title { font-size: calc(3.375rem * .8); }
       .about-img { display: none; }
+      .section-title { font-size: 2.2rem; }
     }
 
-    @media (max-width: 575px) {
-      .py-section { padding: 60px 0; }
-      #hero { min-height: 100svh; }
-      #hero h1 { font-size: 2.2rem; }
-      .hero-stats { gap: 20px; }
-      .trust-items { flex-direction: column; gap: 4px; }
+    @media (max-width: 767px) {
+      body { font-size: 1rem; }
+
+      /* Header */
+      #site-header { padding: 10px 0; }
+      #site-header .logo img { height: 44px; }
+
+      /* Buttons — smaller and full width on mobile */
+      .btn-primary-custom,
+      .btn-secondary-custom,
+      .btn-white-custom {
+        min-width: 0;
+        width: 100%;
+        min-height: 54px;
+        font-size: 1rem;
+        padding: 0 1.25rem;
+      }
+      .d-flex.gap-3 { gap: 0.75rem !important; }
+
+      /* Hero */
+      #hero { min-height: 100svh; padding: 80px 0 48px; }
+      #hero h1 { font-size: 2rem; line-height: 1.15; margin-bottom: 1rem; }
+      #hero p.hero-sub { font-size: 0.95rem; margin-bottom: 1.5rem; }
+      .hero-stats { gap: 20px; margin-top: 1.75rem; }
+      .hero-stat strong { font-size: 1.75rem; }
+      .hero-stat span { font-size: 0.78rem; }
+
+      /* Trust strip */
+      .trust-items { flex-direction: column; gap: 2px; align-items: flex-start; padding: 0 1rem; }
       .trust-divider { display: none; }
-      #cta-section h2 { font-size: 2rem; }
-      .pricing-callout { flex-direction: column; text-align: center; }
+      .trust-item { font-size: 0.88rem; padding: 4px 0; }
+
+      /* Sections */
+      .py-section { padding: 52px 0; }
+      .section-title { font-size: 1.7rem; }
+      .section-sub { font-size: 0.95rem; }
+      .section-label { font-size: 0.72rem; }
+
+      /* Service cards */
+      .service-card { padding: 1.5rem 1.25rem; }
+      .service-card h3 { font-size: 1.2rem; }
+      .service-card p { font-size: 0.92rem; }
+
+      /* Steps */
+      .step-box { padding: 1.5rem 1rem; }
+      .step-circle { width: 56px; height: 56px; font-size: 1.4rem; }
+      .step-box h3 { font-size: 1.1rem; }
+
+      /* Pricing */
+      .price-card { padding: 1.25rem 1rem; }
+      .price-card h3 { font-size: 1rem; }
+      .price-amount { font-size: 2rem; }
+      .pricing-callout { flex-direction: column; text-align: center; gap: 0.75rem; font-size: 0.9rem; }
+
+      /* Gallery */
+      .gallery-item img { height: 220px; }
+
+      /* Reviews */
+      .review-card { padding: 1.25rem; }
+      .review-text { font-size: 0.92rem; }
+      .reviewer-name { font-size: 0.95rem; }
+
+      /* Area chips */
+      .area-chip { padding: 10px 14px; font-size: 0.88rem; }
+
+      /* FAQ */
+      .faq-question { font-size: 0.95rem; padding: 16px 18px; }
+
+      /* CTA */
+      #cta-section { padding: 60px 0; }
+      #cta-section h2 { font-size: 1.75rem; }
+      #cta-section p { font-size: 0.95rem; }
+
+      /* About section why items */
+      .why-item h4 { font-size: 1rem; }
+      .why-item p { font-size: 0.88rem; }
+
+      /* Google badge */
+      .google-badge { padding: 6px 14px 6px 10px; }
+      .google-badge .badge-text { font-size: 0.72rem; }
+      .google-badge .badge-stars { font-size: 0.78rem; }
+    }
+
+    @media (max-width: 480px) {
+      #hero h1 { font-size: 1.75rem; }
+      .section-title { font-size: 1.5rem; }
+      .hero-stat strong { font-size: 1.5rem; }
+      .price-amount { font-size: 1.75rem; }
     }
   </style>
 </head>
@@ -918,7 +996,7 @@
           <p class="hero-sub">You know exactly who's coming, what it costs, and that we're actually going to show up. Owner answers every call. Owner shows up to every job. Flat-rate quote before we touch a thing.</p>
           <div class="d-flex flex-wrap gap-3">
             <a href="tel:5092516096" class="btn-primary-custom">📞 Call 509-251-6096</a>
-            <a href="#pricing" class="btn-secondary-custom">See Our Pricing</a>
+            <a href="#pricing" class="btn-secondary-custom d-none d-sm-inline-flex">See Our Pricing</a>
           </div>
           <div class="hero-stats">
             <div class="hero-stat">

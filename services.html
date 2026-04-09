@@ -158,8 +158,33 @@
 
     .header-cta { display:inline-flex; align-items:center; gap:8px; background:var(--green); color:#000; border:2px solid var(--green); border-radius:8px; padding:10px 22px; font-weight:700; font-size:0.95rem; white-space:nowrap; transition:background .15s,color .15s; }
     .header-cta:hover { background:transparent; color:var(--green); }
-    @media(max-width:991px){ #primary-menu{display:none;} .menu-toggle{display:block;} }
-    @media(max-width:575px){ .py-section{padding:56px 0;} .page-hero{padding:64px 0 50px;} }
+    @media(max-width:991px){ #primary-menu{display:none;} .menu-toggle{display:block;} .section-title{font-size:2.2rem;} }
+    @media(max-width:767px){
+      body{font-size:1rem;}
+      #site-header{padding:10px 0;}
+      #site-header .logo img{height:44px;}
+      .btn-primary-custom,.btn-dark-custom,.btn-white-custom{min-width:0;width:100%;min-height:54px;font-size:1rem;padding:0 1.25rem;}
+      .page-hero{padding:72px 0 52px;}
+      .page-hero h1{font-size:1.8rem;}
+      .page-hero p{font-size:0.92rem;}
+      .py-section{padding:52px 0;}
+      .section-title{font-size:1.7rem;}
+      .section-sub{font-size:0.95rem;}
+      .section-label{font-size:0.72rem;}
+      .tab-btn{padding:10px 14px;font-size:0.82rem;}
+      .item-card{padding:1.1rem;}
+      .item-card h4{font-size:0.95rem;}
+      .item-card p{font-size:0.85rem;}
+      .process-step{padding:1.25rem;}
+      .process-num{width:44px;height:44px;font-size:1.2rem;}
+      .faq-question{font-size:0.92rem;padding:14px 16px;}
+    }
+    @media(max-width:480px){
+      .page-hero h1{font-size:1.5rem;}
+      .section-title{font-size:1.45rem;}
+      .tab-buttons{gap:6px;}
+      .tab-btn{padding:8px 10px;font-size:0.78rem;}
+    }
   </style>
 </head>
 <body>

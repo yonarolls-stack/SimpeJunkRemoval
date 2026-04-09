@@ -348,11 +348,47 @@
       #primary-menu { display: none; }
       .menu-toggle { display: block; }
       .vs-divider { writing-mode: horizontal-tb; padding: 12px 0; }
+      .section-title { font-size: 2.2rem; }
     }
-    @media (max-width: 575px) {
-      .py-section { padding: 60px 0; }
-      .trust-items { flex-direction: column; gap: 4px; }
+    @media (max-width: 767px) {
+      body { font-size: 1rem; }
+      #site-header { padding: 10px 0; }
+      #site-header .logo img { height: 44px; }
+      .btn-primary-custom, .btn-secondary-custom, .btn-white-custom { min-width: 0; width: 100%; min-height: 54px; font-size: 1rem; padding: 0 1.25rem; }
+      .page-hero { padding: 80px 0 60px; }
+      .page-hero h1 { font-size: 1.8rem; }
+      .page-hero p { font-size: 0.92rem; }
+      .py-section { padding: 52px 0; }
+      .section-title { font-size: 1.7rem; }
+      .section-sub { font-size: 0.95rem; }
+      .section-label { font-size: 0.72rem; }
+      .trust-items { flex-direction: column; gap: 2px; align-items: flex-start; padding: 0 1rem; }
       .trust-divider { display: none; }
+      .trust-item { font-size: 0.88rem; padding: 4px 0; }
+      .capacity-hero { padding: 48px 0; }
+      .capacity-number { font-size: 5rem; }
+      .vs-box { padding: 1.25rem; }
+      .vs-box .vs-num { font-size: 2.5rem; }
+      .load-bar-wrap { padding: 1.5rem 1.25rem; }
+      .fits-card { padding: 1.25rem; }
+      .fits-card h3 { font-size: 1rem; }
+      .fits-card ul li { font-size: 0.88rem; }
+      .photo-grid-item img { height: 240px; }
+      .photo-grid-item.tall img { height: 300px; }
+      .expect-step { gap: 14px; }
+      .expect-num { width: 42px; height: 42px; font-size: 1.1rem; flex-shrink: 0; }
+      .expect-step h3 { font-size: 1rem; }
+      .expect-step p { font-size: 0.88rem; }
+      .price-card { padding: 1.5rem; }
+      .price-row { font-size: 0.92rem; }
+      .price-row .price-amt { font-size: 1rem; }
+      #cta-section { padding: 60px 0; }
+      #cta-section h2 { font-size: 1.75rem; }
+    }
+    @media (max-width: 480px) {
+      .page-hero h1 { font-size: 1.5rem; }
+      .section-title { font-size: 1.45rem; }
+      .capacity-number { font-size: 4rem; }
     }
   </style>
 </head>
