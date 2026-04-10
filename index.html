@@ -4,20 +4,17 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!-- Primary SEO -->
   <title>Simple Junk Removal | Coeur d'Alene & Spokane | Call 509-251-6096</title>
   <meta name="description" content="Junk removal in Coeur d'Alene & Spokane by local brothers Frank & Romen. Upfront flat-rate pricing from $99. Owner answers every call, owner shows up to every job. 5-star rated, 100+ jobs. Book within 24–48 hours." />
   <meta name="keywords" content="junk removal Coeur d'Alene, junk removal Spokane, CDA junk removal, garage cleanout CDA, shed demolition Spokane, junk hauling Idaho, Simple Junk Removal" />
   <link rel="canonical" href="https://simplejunkremoval.com/" />
 
-  <!-- Open Graph -->
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://simplejunkremoval.com/" />
   <meta property="og:title" content="Simple Junk Removal — CDA & Spokane's Trusted Local Brothers" />
   <meta property="og:description" content="Flat-rate junk removal starting at $99. Owner answers every call. Owner on every job. 5-star rated across 100+ jobs in CDA & Spokane." />
   <meta property="og:image" content="images/hero-bg.jpg" />
 
-  <!-- Schema: Local Business -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -27,1380 +24,1353 @@
     "telephone": "+15092516096",
     "priceRange": "$99–$900",
     "description": "Junk removal in Coeur d'Alene and Spokane by local owners Frank and Romen. Flat-rate pricing, no surprises, owner on every job.",
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Coeur d'Alene",
-      "addressRegion": "ID",
-      "addressCountry": "US"
-    },
-    "areaServed": [
-      { "@type": "City", "name": "Coeur d'Alene" },
-      { "@type": "City", "name": "Spokane" }
-    ],
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "5",
-      "reviewCount": "100"
-    },
+    "address": { "@type": "PostalAddress", "addressLocality": "Coeur d'Alene", "addressRegion": "ID", "addressCountry": "US" },
+    "areaServed": [{ "@type": "City", "name": "Coeur d'Alene" }, { "@type": "City", "name": "Spokane" }],
+    "aggregateRating": { "@type": "AggregateRating", "ratingValue": "5", "reviewCount": "100" },
     "openingHours": "Mo-Su 07:00-19:00",
     "url": "https://simplejunkremoval.com"
   }
   </script>
 
-  <!-- Bootstrap 5 -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
-
-  <!-- Fonts: Barlow Condensed (display) + DM Sans (body) -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800;900&family=DM+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet" />
 
   <style>
+    /* ─────────────────────────────────────────
+       TOKENS
+    ───────────────────────────────────────── */
     :root {
-      --green: #3dbe5c;
-      --green-dark: #2fa04d;
-      --black: #000000;
-      --cream: #f5f0e8;
-      --body-text: #1a1a1a;
-      --gray-text: #666;
-      --light-bg: #f2f2f2;
-      --card-radius: 4px;
-      --type-display: 'Barlow Condensed', sans-serif;
-      --type-body: 'DM Sans', sans-serif;
-      --ease-reveal: cubic-bezier(0.16, 1, 0.3, 1);
+      --g: #3dbe5c;
+      --g-dark: #2fa04d;
+      --black: #0a0a0a;
+      --white: #ffffff;
+      --off: #f4f4f4;
+      --cream: #f7f3ed;
+      --text: #111111;
+      --muted: #666666;
+      --border: #e2e2e2;
+      --disp: 'Barlow Condensed', sans-serif;
+      --body: 'DM Sans', sans-serif;
+      --ease: cubic-bezier(0.22, 1, 0.36, 1);
     }
 
-    * { box-sizing: border-box; }
-
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
     body {
-      font-family: var(--type-body);
-      font-size: 1.1rem;
-      line-height: 1.65;
-      color: var(--body-text);
-      background: #fff;
-    }
-
-    a { text-decoration: none; color: inherit; }
-    img { max-width: 100%; height: auto; display: block; }
-
-    /* ─── BUTTONS ─── */
-    .btn-primary-custom {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      background: var(--green);
-      color: #000;
-      border: 3px solid #000;
-      border-radius: 0;
-      min-width: 220px;
-      min-height: 64px;
-      font-family: var(--type-display);
-      font-size: 1.4rem;
-      font-weight: 800;
-      letter-spacing: 0.04em;
-      text-transform: uppercase;
-      padding: 0 2rem;
-      transition: background .15s ease-in-out, color .15s ease-in-out, box-shadow .15s ease-in-out, transform .15s ease;
-      cursor: pointer;
-      position: relative;
-    }
-    .btn-primary-custom:hover {
-      background: #000;
-      color: var(--green);
-      box-shadow: 6px 6px 0 var(--green);
-      transform: translateY(-2px) translateX(-2px);
-    }
-
-    .btn-secondary-custom {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      background: transparent;
-      color: #fff;
-      border: 3px solid #fff;
-      border-radius: 0;
-      min-width: 200px;
-      min-height: 64px;
-      font-family: var(--type-display);
-      font-size: 1.4rem;
-      font-weight: 800;
-      letter-spacing: 0.04em;
-      text-transform: uppercase;
-      padding: 0 2rem;
-      transition: background .15s ease-in-out, color .15s ease-in-out;
-      cursor: pointer;
-    }
-    .btn-secondary-custom:hover {
-      background: #fff;
-      color: #000;
-    }
-
-    .btn-white-custom {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      background: #fff;
-      color: #000;
-      border: 3px solid #000;
-      border-radius: 0;
-      min-width: 200px;
-      min-height: 64px;
-      font-family: var(--type-display);
-      font-size: 1.4rem;
-      font-weight: 800;
-      letter-spacing: 0.04em;
-      text-transform: uppercase;
-      padding: 0 2rem;
-      transition: background .15s ease-in-out, color .15s ease-in-out, box-shadow .15s;
-      cursor: pointer;
-    }
-    .btn-white-custom:hover {
-      background: #000;
-      color: #fff;
-      box-shadow: 6px 6px 0 var(--green);
-      transform: translateY(-2px) translateX(-2px);
-    }
-
-    .btn-outline-green {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      background: transparent;
-      color: var(--green);
-      border: 3px solid var(--green);
-      border-radius: 0;
-      min-width: 200px;
-      min-height: 64px;
-      font-family: var(--type-display);
-      font-size: 1.4rem;
-      font-weight: 800;
-      letter-spacing: 0.04em;
-      text-transform: uppercase;
-      padding: 0 2rem;
-      transition: background .15s, color .15s;
-      cursor: pointer;
-    }
-    .btn-outline-green:hover {
-      background: var(--green);
-      color: #000;
-    }
-
-    /* ─── HEADER ─── */
-    #site-header {
-      position: sticky;
-      top: 0;
-      z-index: 999;
-      background: #000;
-      padding: 10px 0;
-      border-bottom: 2px solid #111;
-    }
-    #site-header .logo img {
-      height: 52px;
-      width: auto;
-      display: block;
-    }
-    #primary-menu {
-      list-style: none;
-      margin: 0;
-      padding: 0;
-      display: flex;
-      gap: 32px;
-      align-items: center;
-    }
-    #primary-menu a {
-      color: rgba(255,255,255,.75);
-      font-family: var(--type-display);
-      font-weight: 700;
+      font-family: var(--body);
       font-size: 1rem;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      transition: color .15s ease-in-out;
+      line-height: 1.65;
+      color: var(--text);
+      background: var(--white);
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
     }
-    #primary-menu a:hover { color: var(--green); }
+    a { text-decoration: none; color: inherit; }
+    img { display: block; max-width: 100%; height: auto; }
 
-    .header-cta {
+    /* ─────────────────────────────────────────
+       UTILITY
+    ───────────────────────────────────────── */
+    .container { width: 100%; max-width: 1180px; margin: 0 auto; padding: 0 20px; }
+    .section-pad { padding: 72px 0; }
+    .section-pad-lg { padding: 100px 0; }
+
+    .label {
       display: inline-flex;
       align-items: center;
       gap: 8px;
-      background: var(--green);
-      color: #000;
-      border: 2px solid var(--green);
-      padding: 10px 20px;
-      font-family: var(--type-display);
+      font-family: var(--disp);
+      font-size: 0.72rem;
       font-weight: 800;
-      font-size: 1rem;
-      letter-spacing: 0.05em;
+      letter-spacing: 0.2em;
       text-transform: uppercase;
-      white-space: nowrap;
-      transition: background .15s, color .15s, border-color .15s;
+      color: var(--g);
     }
-    .header-cta:hover { background: #000; color: var(--green); }
+    .label::before {
+      content: '';
+      display: inline-block;
+      width: 20px;
+      height: 2px;
+      background: var(--g);
+    }
+    .label-center { justify-content: center; }
+    .label-center::before { display: none; }
 
-    /* Mobile nav toggle */
-    .menu-toggle {
+    .headline {
+      font-family: var(--disp);
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: -0.01em;
+      line-height: 1.0;
+    }
+    .headline-xl { font-size: clamp(2.6rem, 8vw, 5.5rem); }
+    .headline-lg { font-size: clamp(2.2rem, 5vw, 4rem); }
+    .headline-md { font-size: clamp(1.8rem, 4vw, 2.8rem); }
+
+    .green { color: var(--g); }
+    .white { color: var(--white); }
+
+    /* ─────────────────────────────────────────
+       BUTTONS
+    ───────────────────────────────────────── */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      font-family: var(--disp);
+      font-weight: 900;
+      font-size: 1.15rem;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      padding: 0 28px;
+      height: 60px;
+      border: none;
+      cursor: pointer;
+      transition: background 0.15s, color 0.15s, transform 0.15s;
+      white-space: nowrap;
+    }
+    .btn-full { width: 100%; }
+    .btn-green {
+      background: var(--g);
+      color: var(--black);
+      border: 2px solid var(--black);
+    }
+    .btn-green:hover { background: var(--black); color: var(--g); }
+    .btn-black {
+      background: var(--black);
+      color: var(--white);
+      border: 2px solid var(--black);
+    }
+    .btn-black:hover { background: #222; }
+    .btn-outline-white {
+      background: transparent;
+      color: var(--white);
+      border: 2px solid var(--white);
+    }
+    .btn-outline-white:hover { background: var(--white); color: var(--black); }
+    .btn-outline-black {
+      background: transparent;
+      color: var(--black);
+      border: 2px solid var(--black);
+    }
+    .btn-outline-black:hover { background: var(--black); color: var(--white); }
+
+    /* ─────────────────────────────────────────
+       HEADER
+    ───────────────────────────────────────── */
+    #header {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 900;
+      background: var(--black);
+      height: 64px;
+      display: flex;
+      align-items: center;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    #header .container { display: flex; align-items: center; justify-content: space-between; }
+    #header .logo img { height: 46px; width: auto; }
+
+    .nav-links {
       display: none;
+      list-style: none;
+      gap: 32px;
+    }
+    .nav-links a {
+      font-family: var(--disp);
+      font-size: 0.88rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.65);
+      transition: color 0.15s;
+    }
+    .nav-links a:hover { color: var(--g); }
+
+    .header-phone {
+      display: none;
+      font-family: var(--disp);
+      font-size: 0.9rem;
+      font-weight: 800;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--g);
+      align-items: center;
+      gap: 6px;
+    }
+
+    .hamburger {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
       background: none;
       border: none;
       cursor: pointer;
       padding: 4px;
     }
-    .menu-toggle span {
+    .hamburger span {
       display: block;
-      width: 26px;
-      height: 3px;
+      width: 24px;
+      height: 2px;
       background: #fff;
-      margin: 5px 0;
-      transition: .3s;
-      border-radius: 1px;
+      transition: 0.3s;
     }
 
-    /* Mobile nav sidebar */
-    #mobile-nav {
+    /* ─────────────────────────────────────────
+       MOBILE NAV DRAWER
+    ───────────────────────────────────────── */
+    #nav-drawer {
       position: fixed;
-      top: 0;
-      right: -240px;
-      width: 220px;
-      height: 100vh;
-      background: #000;
-      border-left: 3px solid var(--green);
-      z-index: 9999;
+      inset: 0;
+      z-index: 1000;
+      visibility: hidden;
+    }
+    #nav-drawer.open { visibility: visible; }
+
+    .drawer-overlay {
+      position: absolute;
+      inset: 0;
+      background: rgba(0,0,0,0.7);
+      opacity: 0;
+      transition: opacity 0.3s;
+    }
+    #nav-drawer.open .drawer-overlay { opacity: 1; }
+
+    .drawer-panel {
+      position: absolute;
+      top: 0; right: 0; bottom: 0;
+      width: min(280px, 85vw);
+      background: var(--black);
+      border-left: 2px solid var(--g);
+      padding: 80px 32px 40px;
       display: flex;
       flex-direction: column;
-      padding: 80px 24px 40px;
-      gap: 24px;
-      transition: right .25s var(--ease-reveal);
+      gap: 8px;
+      transform: translateX(100%);
+      transition: transform 0.3s var(--ease);
     }
-    #mobile-nav.open { right: 0; }
-    #mobile-nav a {
-      color: #fff;
-      font-family: var(--type-display);
-      font-size: 1.3rem;
-      font-weight: 800;
-      letter-spacing: 0.06em;
-      text-transform: uppercase;
-      transition: color .15s;
-    }
-    #mobile-nav a:hover { color: var(--green); }
-    #mobile-nav-close {
+    #nav-drawer.open .drawer-panel { transform: translateX(0); }
+
+    .drawer-close {
       position: absolute;
-      top: 20px;
-      right: 20px;
+      top: 20px; right: 20px;
       background: none;
-      border: none;
+      border: 1px solid #333;
       color: #fff;
-      font-size: 1.8rem;
+      font-size: 1.4rem;
+      width: 40px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       cursor: pointer;
       line-height: 1;
     }
-    .mobile-overlay {
-      display: none;
-      position: fixed;
-      inset: 0;
-      background: rgba(0,0,0,.6);
-      z-index: 9998;
+    .drawer-panel a {
+      font-family: var(--disp);
+      font-size: 1.5rem;
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      color: rgba(255,255,255,0.75);
+      padding: 12px 0;
+      border-bottom: 1px solid #1a1a1a;
+      transition: color 0.15s;
     }
-    .mobile-overlay.open { display: block; }
+    .drawer-panel a:hover { color: var(--g); }
+    .drawer-call {
+      margin-top: 24px !important;
+      padding: 16px 0 !important;
+      border: none !important;
+      background: var(--g);
+      color: var(--black) !important;
+      text-align: center;
+      font-size: 1.2rem !important;
+    }
 
-    /* ─── HERO ─── */
+    /* ─────────────────────────────────────────
+       HERO
+    ───────────────────────────────────────── */
     #hero {
       position: relative;
-      min-height: 92vh;
+      min-height: 100svh;
       display: flex;
-      align-items: center;
-      background: #000 url('images/hero-bg.jpg') center center / cover no-repeat;
-      overflow: hidden;
+      align-items: flex-end;
+      padding-bottom: 80px;
+      background: var(--black) url('images/hero-bg.jpg') center 30% / cover no-repeat;
+      padding-top: 64px; /* header height */
     }
-    #hero::after {
-      content: '';
-      position: absolute;
-      inset: 0;
-      background: linear-gradient(105deg, rgba(0,0,0,.88) 0%, rgba(0,0,0,.55) 60%, rgba(0,0,0,.3) 100%);
-    }
-    /* Diagonal accent stripe */
     #hero::before {
       content: '';
       position: absolute;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      height: 5px;
-      background: var(--green);
-      z-index: 3;
+      inset: 0;
+      background: linear-gradient(
+        to bottom,
+        rgba(0,0,0,0.3) 0%,
+        rgba(0,0,0,0.55) 40%,
+        rgba(0,0,0,0.88) 100%
+      );
     }
-    #hero .hero-content {
+    .hero-inner {
       position: relative;
       z-index: 2;
-      padding: 100px 0 80px;
-    }
-    .hero-eyebrow {
-      font-family: var(--type-display);
-      font-size: 0.9rem;
-      font-weight: 700;
-      letter-spacing: 0.2em;
-      text-transform: uppercase;
-      color: var(--green);
-      margin-bottom: 16px;
-      display: flex;
-      align-items: center;
-      gap: 10px;
-    }
-    .hero-eyebrow::before {
-      content: '';
-      display: inline-block;
-      width: 32px;
-      height: 3px;
-      background: var(--green);
-    }
-    #hero h1 {
-      font-family: var(--type-display);
-      font-size: clamp(3rem, 7vw, 6rem);
-      font-weight: 900;
-      line-height: 0.95;
-      color: #fff;
-      text-transform: uppercase;
-      letter-spacing: -0.01em;
-      margin-bottom: 1.5rem;
-    }
-    #hero h1 .accent { color: var(--green); }
-    #hero h1 .outline {
-      -webkit-text-stroke: 2px #fff;
-      color: transparent;
-    }
-    #hero p.hero-sub {
-      font-size: 1.15rem;
-      color: rgba(255,255,255,.78);
-      max-width: 500px;
-      margin-bottom: 2.25rem;
-      line-height: 1.7;
-    }
-    .hero-buttons {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 16px;
-      margin-bottom: 3rem;
-    }
-
-    /* Frosted stats panel */
-    .hero-stats-panel {
-      display: inline-flex;
-      gap: 0;
-      border: 2px solid rgba(255,255,255,.2);
-      background: rgba(0,0,0,.45);
-      backdrop-filter: blur(8px);
-    }
-    .hero-stat {
-      padding: 20px 32px;
-      border-right: 1px solid rgba(255,255,255,.15);
-      text-align: center;
-    }
-    .hero-stat:last-child { border-right: none; }
-    .hero-stat strong {
-      display: block;
-      font-family: var(--type-display);
-      font-size: 2.4rem;
-      font-weight: 900;
-      color: var(--green);
-      line-height: 1;
-      letter-spacing: -0.02em;
-    }
-    .hero-stat span {
-      font-family: var(--type-body);
-      font-size: 0.72rem;
-      color: rgba(255,255,255,.55);
-      font-weight: 500;
-      letter-spacing: 0.05em;
-      text-transform: uppercase;
-    }
-
-    /* ─── MARQUEE TRUST STRIP ─── */
-    #trust-strip {
-      background: #0d0d0d;
-      padding: 0;
-      overflow: hidden;
-      border-top: 1px solid #222;
-      border-bottom: 1px solid #222;
-    }
-    .marquee-wrapper {
-      display: flex;
-      overflow: hidden;
-      white-space: nowrap;
-      /* Fade edges for professional seamless look */
-      -webkit-mask-image: linear-gradient(to right, transparent 0%, black 8%, black 92%, transparent 100%);
-      mask-image: linear-gradient(to right, transparent 0%, black 8%, black 92%, transparent 100%);
-    }
-    @keyframes marquee-scroll {
-      from { transform: translateX(0); }
-      to   { transform: translateX(-50%); }
-    }
-    .marquee-track {
-      display: inline-flex;
-      align-items: center;
-      animation: marquee-scroll 36s linear infinite;
-    }
-    .marquee-item {
-      display: inline-flex;
-      align-items: center;
-      gap: 18px;
-      padding: 16px 28px;
-      font-family: var(--type-display);
-      font-size: 0.88rem;
-      font-weight: 700;
-      letter-spacing: 0.14em;
-      text-transform: uppercase;
-      color: rgba(255,255,255,.75);
-    }
-    .marquee-sep {
-      color: var(--green);
-      font-size: 0.6rem;
-      flex-shrink: 0;
-      opacity: 0.8;
-    }
-
-    /* ─── SECTION COMMONS ─── */
-    .section-label {
-      font-family: var(--type-display);
-      font-size: 0.8rem;
-      font-weight: 700;
-      letter-spacing: 0.2em;
-      text-transform: uppercase;
-      color: var(--green);
-      margin-bottom: 12px;
-      display: flex;
-      align-items: center;
-      gap: 10px;
-    }
-    .section-label::before {
-      content: '';
-      display: inline-block;
-      width: 24px;
-      height: 3px;
-      background: var(--green);
-    }
-    .section-label.label-center {
-      justify-content: center;
-    }
-    .section-label.label-center::before { display: none; }
-
-    .section-title {
-      font-family: var(--type-display);
-      font-size: clamp(2.6rem, 5vw, 4.5rem);
-      font-weight: 900;
-      line-height: 1.0;
-      text-transform: uppercase;
-      letter-spacing: -0.01em;
-      margin-bottom: 1rem;
-    }
-    .section-title .accent { color: var(--green); }
-    .section-title .outline {
-      -webkit-text-stroke: 2px currentColor;
-      color: transparent;
-    }
-    .section-sub {
-      font-family: var(--type-body);
-      font-size: 1.05rem;
-      color: var(--gray-text);
-      line-height: 1.7;
-    }
-
-    .py-section { padding: 100px 0; }
-    .py-section-sm { padding: 56px 0; }
-
-    /* ─── SERVICES ─── */
-    #services { background: #fff; }
-    .service-card {
-      background: #fff;
-      border: 2px solid #000;
-      padding: 2.5rem 2rem;
-      height: 100%;
-      transition: box-shadow .2s ease, transform .2s ease;
-      position: relative;
-    }
-    .service-card:hover {
-      box-shadow: 8px 8px 0 #000;
-      transform: translateY(-4px) translateX(-4px);
-    }
-    .service-icon {
-      font-size: 2.2rem;
-      margin-bottom: 1.25rem;
-      line-height: 1;
-    }
-    .service-card h3 {
-      font-family: var(--type-display);
-      font-size: 1.9rem;
-      font-weight: 900;
-      text-transform: uppercase;
-      letter-spacing: 0.01em;
-      margin-bottom: .75rem;
-      line-height: 1.05;
-    }
-    .service-card p {
-      color: var(--gray-text);
-      font-size: 0.98rem;
-      margin-bottom: 1.25rem;
-      line-height: 1.65;
-    }
-    .service-card ul {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-    }
-    .service-card ul li {
-      font-size: 0.95rem;
-      color: #333;
-      padding: 5px 0;
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      border-bottom: 1px solid #f0f0f0;
-    }
-    .service-card ul li:last-child { border-bottom: none; }
-    .service-card ul li::before {
-      content: "→";
-      color: var(--green);
-      font-weight: 700;
-      font-size: 1rem;
-      flex-shrink: 0;
-    }
-
-    /* ─── HOW IT WORKS ─── */
-    #how-it-works { background: var(--cream); }
-    .step-box {
-      text-align: center;
-      padding: 2.5rem 1.5rem;
-      position: relative;
-    }
-    .step-number-bg {
-      font-family: var(--type-display);
-      font-size: 9rem;
-      font-weight: 900;
-      color: rgba(0,0,0,.06);
-      line-height: 1;
-      position: absolute;
-      top: 0;
-      left: 50%;
-      transform: translateX(-50%);
-      pointer-events: none;
-      letter-spacing: -0.05em;
-      user-select: none;
-    }
-    .step-number {
-      font-family: var(--type-display);
-      font-size: 1.2rem;
-      font-weight: 900;
-      color: var(--green);
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      margin-bottom: 1rem;
-      position: relative;
-      z-index: 1;
-    }
-    .step-box h3 {
-      font-family: var(--type-display);
-      font-size: 1.8rem;
-      font-weight: 900;
-      text-transform: uppercase;
-      margin-bottom: .75rem;
-      position: relative;
-      z-index: 1;
-      line-height: 1.05;
-    }
-    .step-box p {
-      font-size: 0.98rem;
-      color: var(--gray-text);
-      line-height: 1.65;
-      position: relative;
-      z-index: 1;
-      max-width: 280px;
-      margin: 0 auto;
-    }
-
-    /* Step connector line */
-    .step-connector {
-      display: flex;
-      align-items: flex-start;
-      padding-top: 120px;
-    }
-    @media (min-width: 992px) {
-      .step-connector::after {
-        content: '→';
-        font-size: 2.5rem;
-        color: rgba(0,0,0,.2);
-        margin-top: -16px;
-        position: absolute;
-        right: -20px;
-        top: 120px;
-      }
-    }
-
-    /* ─── ABOUT / WHY US ─── */
-    #about { background: #fff; border-top: 3px solid #000; border-bottom: 3px solid #000; }
-    .about-img {
-      overflow: hidden;
-      position: relative;
-    }
-    .about-img img {
       width: 100%;
-      height: 580px;
-      object-fit: cover;
-      object-position: center top;
     }
-    .about-badge {
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      background: var(--green);
-      color: #000;
-      padding: 16px 24px;
-      font-family: var(--type-display);
-      font-weight: 900;
-      font-size: 1rem;
-      letter-spacing: 0.05em;
-      text-transform: uppercase;
-      display: flex;
+    .hero-badge {
+      display: inline-flex;
       align-items: center;
-      gap: 12px;
-    }
-    .about-badge strong {
-      font-size: 2.2rem;
-      line-height: 1;
-    }
-    .why-item {
-      display: flex;
-      gap: 20px;
-      align-items: flex-start;
-      margin-bottom: 2rem;
-      padding-bottom: 2rem;
-      border-bottom: 1px solid #e8e8e8;
-    }
-    .why-item:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
-    .why-icon {
-      font-size: 1.5rem;
-      flex-shrink: 0;
-      width: 48px;
-      text-align: center;
-      margin-top: 2px;
-    }
-    .why-item h4 {
-      font-family: var(--type-display);
-      font-size: 1.4rem;
-      font-weight: 900;
-      text-transform: uppercase;
-      letter-spacing: 0.02em;
-      margin-bottom: 4px;
-      line-height: 1.1;
-    }
-    .why-item p {
-      font-size: 0.95rem;
-      color: var(--gray-text);
-      margin: 0;
-      line-height: 1.6;
-    }
-
-    /* ─── PRICING ─── */
-    #pricing { background: #000; }
-    #pricing .section-title { color: #fff; }
-    #pricing .section-label { color: var(--green); }
-    #pricing .section-sub { color: rgba(255,255,255,.55); }
-    .price-card {
-      background: #111;
-      border: 2px solid #222;
-      padding: 2rem 1.75rem;
-      text-align: center;
-      color: #fff;
-      transition: border-color .2s, box-shadow .2s, transform .2s;
-      height: 100%;
-    }
-    .price-card:hover {
-      border-color: var(--green);
-      box-shadow: 6px 6px 0 var(--green);
-      transform: translateY(-4px) translateX(-4px);
-    }
-    .price-card.featured {
-      border-color: var(--green);
-      background: rgba(61,190,92,.07);
-    }
-    .price-card .tier-label {
-      font-family: var(--type-display);
-      font-size: 0.75rem;
+      gap: 8px;
+      background: var(--g);
+      color: var(--black);
+      font-family: var(--disp);
+      font-size: 0.72rem;
       font-weight: 800;
       letter-spacing: 0.15em;
       text-transform: uppercase;
-      color: var(--green);
-      margin-bottom: .75rem;
+      padding: 6px 14px;
+      margin-bottom: 16px;
     }
-    .price-card h3 {
-      font-family: var(--type-display);
-      font-size: 1.5rem;
+    #hero h1 {
+      font-family: var(--disp);
+      font-size: clamp(2.8rem, 9vw, 6rem);
       font-weight: 900;
+      line-height: 0.95;
       text-transform: uppercase;
-      margin-bottom: .25rem;
-      line-height: 1.1;
+      color: var(--white);
+      letter-spacing: -0.01em;
+      margin-bottom: 20px;
     }
-    .price-amount {
-      font-family: var(--type-display);
-      font-size: 3rem;
-      font-weight: 900;
-      color: #fff;
-      line-height: 1;
-      margin: .75rem 0 .25rem;
-      letter-spacing: -0.02em;
+    #hero h1 em {
+      font-style: normal;
+      color: var(--g);
     }
-    .price-note { font-size: 0.78rem; color: rgba(255,255,255,.4); }
-    .price-capacity { margin-top: .75rem; font-size: 0.9rem; color: rgba(255,255,255,.6); }
-    .pricing-callout {
-      background: #111;
-      border: 2px solid #222;
-      padding: 2rem;
-      color: rgba(255,255,255,.65);
-      font-size: 1rem;
-      display: flex;
-      align-items: center;
-      gap: 1.5rem;
+    #hero p.hero-sub {
+      font-size: 1.05rem;
+      color: rgba(255,255,255,0.75);
+      line-height: 1.65;
+      margin-bottom: 28px;
+      max-width: 480px;
     }
-    .pricing-callout .icon { font-size: 2.2rem; flex-shrink: 0; }
-    .pricing-callout strong { color: #fff; }
-
-    /* ─── GALLERY ─── */
-    #gallery { background: var(--light-bg); border-top: 3px solid #000; border-bottom: 3px solid #000; }
-    .gallery-item {
-      overflow: hidden;
-      position: relative;
-    }
-    .gallery-item img {
-      width: 100%;
-      height: 300px;
-      object-fit: cover;
-      object-position: center center;
-      transition: transform .5s var(--ease-reveal);
-    }
-    .gallery-item:hover img { transform: scale(1.06); }
-    .gallery-caption {
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      padding: 16px 20px;
-      background: linear-gradient(transparent, rgba(0,0,0,.85));
-      color: rgba(255,255,255,.95);
-      font-family: var(--type-display);
-      font-size: 1rem;
-      font-weight: 700;
-      letter-spacing: 0.04em;
-      text-transform: uppercase;
-    }
-
-    /* ─── REVIEWS ─── */
-    #reviews { background: #fff; }
-    .review-card {
-      background: #fff;
-      border: 2px solid #000;
-      padding: 2rem;
-      height: 100%;
-      cursor: pointer;
-      position: relative;
-      transition: box-shadow .2s ease, transform .2s ease;
+    .hero-cta-stack {
       display: flex;
       flex-direction: column;
-      justify-content: space-between;
-      gap: 1.25rem;
+      gap: 12px;
+      margin-bottom: 32px;
     }
-    .review-card:hover {
-      box-shadow: 8px 8px 0 var(--green);
-      transform: translateY(-4px) translateX(-4px);
+    /* Hero trust row */
+    .hero-trust {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      flex-wrap: wrap;
     }
-    .review-stars { color: #f5a623; font-size: 1.1rem; letter-spacing: 3px; margin-bottom: .75rem; }
-    .review-text {
-      font-family: var(--type-body);
-      font-style: italic;
-      font-size: 1rem;
-      color: #444;
-      line-height: 1.7;
+    .hero-trust-item {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-family: var(--body);
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: rgba(255,255,255,0.65);
     }
-    .reviewer { display: flex; align-items: center; gap: .75rem; }
-    .reviewer-avatar {
-      width: 48px;
-      height: 48px;
-      border-radius: 0;
-      background: #000;
-      color: var(--green);
-      font-family: var(--type-display);
+    .hero-trust-item .dot {
+      width: 4px;
+      height: 4px;
+      background: var(--g);
+      border-radius: 50%;
+    }
+    .hero-trust-item .stars { color: #fbbf24; letter-spacing: 1px; }
+
+    /* ─────────────────────────────────────────
+       PROOF STRIP
+    ───────────────────────────────────────── */
+    #proof-strip {
+      background: var(--black);
+      border-top: 2px solid var(--g);
+      border-bottom: 1px solid #1a1a1a;
+    }
+    .proof-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+    }
+    .proof-item {
+      padding: 24px 16px;
+      text-align: center;
+      border-right: 1px solid #1a1a1a;
+    }
+    .proof-item:last-child { border-right: none; }
+    .proof-num {
+      font-family: var(--disp);
+      font-size: clamp(2rem, 5vw, 2.8rem);
       font-weight: 900;
-      font-size: 1.1rem;
+      color: var(--g);
+      line-height: 1;
+      display: block;
+    }
+    .proof-label {
+      font-size: 0.72rem;
+      font-weight: 500;
+      color: rgba(255,255,255,0.45);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      display: block;
+      margin-top: 4px;
+    }
+
+    /* ─────────────────────────────────────────
+       MARQUEE (desktop only)
+    ───────────────────────────────────────── */
+    #marquee-strip {
+      background: var(--g);
+      overflow: hidden;
+      border-bottom: 1px solid #000;
+    }
+    .mq-wrapper {
+      overflow: hidden;
+      -webkit-mask-image: linear-gradient(to right, transparent 0%, #000 6%, #000 94%, transparent 100%);
+      mask-image: linear-gradient(to right, transparent 0%, #000 6%, #000 94%, transparent 100%);
+    }
+    @keyframes mq-scroll {
+      from { transform: translateX(0); }
+      to   { transform: translateX(-50%); }
+    }
+    .mq-track {
+      display: inline-flex;
+      align-items: center;
+      animation: mq-scroll 40s linear infinite;
+    }
+    .mq-item {
+      display: inline-flex;
+      align-items: center;
+      gap: 16px;
+      padding: 13px 32px;
+      font-family: var(--disp);
+      font-size: 0.82rem;
+      font-weight: 800;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--black);
+      white-space: nowrap;
+    }
+    .mq-dot { width: 5px; height: 5px; background: rgba(0,0,0,0.35); border-radius: 50%; flex-shrink: 0; }
+
+    /* ─────────────────────────────────────────
+       MOBILE STATIC STRIP (shows on small screens)
+    ───────────────────────────────────────── */
+    #static-strip {
+      display: none;
+      background: var(--g);
+      border-bottom: 1px solid #000;
+    }
+    .static-strip-inner {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+    }
+    .strip-item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 10px 20px;
+      font-family: var(--disp);
+      font-size: 0.85rem;
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--black);
+      border-bottom: 1px solid rgba(0,0,0,0.12);
+    }
+    .strip-item:last-child { border-bottom: none; }
+    .strip-item::before { content: '✓'; font-size: 1rem; }
+
+    /* ─────────────────────────────────────────
+       SERVICES
+    ───────────────────────────────────────── */
+    #services { background: var(--white); }
+    .services-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 0;
+      border: 2px solid var(--black);
+    }
+    .svc-card {
+      padding: 28px 24px;
+      border-bottom: 2px solid var(--black);
+      position: relative;
+      transition: background 0.2s;
+    }
+    .svc-card:last-child { border-bottom: none; }
+    .svc-card:hover { background: var(--off); }
+    .svc-icon { font-size: 2rem; margin-bottom: 12px; line-height: 1; }
+    .svc-card h3 {
+      font-family: var(--disp);
+      font-size: 1.6rem;
+      font-weight: 900;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+      line-height: 1.05;
+    }
+    .svc-card p {
+      font-size: 0.92rem;
+      color: var(--muted);
+      line-height: 1.65;
+      margin-bottom: 14px;
+    }
+    .svc-list {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+    .svc-list li {
+      font-size: 0.78rem;
+      font-weight: 600;
+      color: var(--text);
+      background: var(--off);
+      padding: 4px 10px;
+      border: 1px solid var(--border);
+    }
+
+    /* ─────────────────────────────────────────
+       HOW IT WORKS
+    ───────────────────────────────────────── */
+    #process { background: var(--cream); }
+    .process-list { display: flex; flex-direction: column; gap: 0; }
+    .process-step {
+      display: flex;
+      align-items: flex-start;
+      gap: 20px;
+      padding: 28px 0;
+      border-bottom: 1px solid #ddd8cf;
+    }
+    .process-step:last-child { border-bottom: none; }
+    .process-num {
+      font-family: var(--disp);
+      font-size: 3.5rem;
+      font-weight: 900;
+      color: var(--g);
+      line-height: 1;
+      flex-shrink: 0;
+      width: 64px;
+      text-align: right;
+    }
+    .process-text h3 {
+      font-family: var(--disp);
+      font-size: 1.4rem;
+      font-weight: 900;
+      text-transform: uppercase;
+      margin-bottom: 6px;
+      padding-top: 8px;
+      line-height: 1.05;
+    }
+    .process-text p { font-size: 0.92rem; color: var(--muted); line-height: 1.65; }
+
+    /* ─────────────────────────────────────────
+       WHY US / ABOUT
+    ───────────────────────────────────────── */
+    #about { background: var(--white); border-top: 2px solid var(--black); border-bottom: 2px solid var(--black); }
+    .about-photo {
+      position: relative;
+      overflow: hidden;
+    }
+    .about-photo img {
+      width: 100%;
+      height: 320px;
+      object-fit: cover;
+      object-position: center top;
+      display: block;
+    }
+    .about-photo-label {
+      position: absolute;
+      bottom: 0; left: 0;
+      background: var(--g);
+      color: var(--black);
+      font-family: var(--disp);
+      font-size: 0.82rem;
+      font-weight: 800;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      padding: 10px 16px;
+    }
+    .about-body { padding: 36px 0; }
+    .about-body p {
+      font-size: 0.95rem;
+      color: #444;
+      line-height: 1.8;
+      margin-bottom: 16px;
+    }
+    .why-list { display: flex; flex-direction: column; gap: 0; margin-top: 28px; }
+    .why-row {
+      display: flex;
+      align-items: flex-start;
+      gap: 16px;
+      padding: 18px 0;
+      border-bottom: 1px solid var(--border);
+    }
+    .why-row:last-child { border-bottom: none; }
+    .why-icon { font-size: 1.4rem; flex-shrink: 0; margin-top: 2px; }
+    .why-row h4 {
+      font-family: var(--disp);
+      font-size: 1.15rem;
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: 0.03em;
+      margin-bottom: 2px;
+      line-height: 1.1;
+    }
+    .why-row p { font-size: 0.88rem; color: var(--muted); margin: 0; line-height: 1.6; }
+
+    /* ─────────────────────────────────────────
+       CONTRACTORS / PRO SECTION
+    ───────────────────────────────────────── */
+    #pro { background: var(--black); }
+    #pro .label { color: var(--g); }
+    .pro-badge {
+      display: inline-block;
+      background: var(--g);
+      color: var(--black);
+      font-family: var(--disp);
+      font-size: 0.72rem;
+      font-weight: 800;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      padding: 6px 14px;
+      margin-bottom: 20px;
+    }
+    .pro-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 20px;
+      margin-top: 32px;
+    }
+    .pro-item {
+      border-left: 3px solid var(--g);
+      padding-left: 20px;
+    }
+    .pro-item h4 {
+      font-family: var(--disp);
+      font-size: 1.2rem;
+      font-weight: 900;
+      text-transform: uppercase;
+      color: var(--white);
+      letter-spacing: 0.04em;
+      margin-bottom: 6px;
+      line-height: 1.1;
+    }
+    .pro-item p { font-size: 0.9rem; color: rgba(255,255,255,0.5); line-height: 1.65; margin: 0; }
+
+    /* ─────────────────────────────────────────
+       REVIEWS
+    ───────────────────────────────────────── */
+    #reviews { background: var(--white); }
+    .google-row {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 32px;
+      flex-wrap: wrap;
+    }
+    .g-logo-wrap {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      background: var(--white);
+      border: 2px solid var(--black);
+      padding: 10px 16px;
+    }
+    .g-logo {
+      width: 20px;
+      height: 20px;
+      background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%234285F4' d='M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z'/%3E%3Cpath fill='%2334A853' d='M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z'/%3E%3Cpath fill='%23FBBC05' d='M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z'/%3E%3Cpath fill='%23EA4335' d='M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z'/%3E%3C/svg%3E") center/contain no-repeat;
+      flex-shrink: 0;
+    }
+    .g-label { font-size: 0.78rem; font-weight: 700; color: var(--text); line-height: 1.3; }
+    .g-stars { color: #fbbf24; font-size: 0.78rem; letter-spacing: 1px; }
+    .g-count { font-weight: 400; color: var(--muted); font-size: 0.72rem; }
+
+    .reviews-list { display: flex; flex-direction: column; gap: 0; }
+    .review-item {
+      padding: 28px 0;
+      border-bottom: 1px solid var(--border);
+    }
+    .review-item:first-child { border-top: 2px solid var(--black); }
+    .review-stars { color: #fbbf24; letter-spacing: 2px; font-size: 1rem; margin-bottom: 10px; }
+    .review-text {
+      font-size: 1rem;
+      color: #333;
+      line-height: 1.75;
+      font-style: italic;
+      margin-bottom: 14px;
+    }
+    .reviewer-row { display: flex; align-items: center; gap: 10px; }
+    .reviewer-avatar {
+      width: 40px;
+      height: 40px;
+      background: var(--black);
+      color: var(--g);
+      font-family: var(--disp);
+      font-size: 0.95rem;
+      font-weight: 900;
       display: flex;
       align-items: center;
       justify-content: center;
       flex-shrink: 0;
     }
     .reviewer-name {
-      font-family: var(--type-display);
-      font-size: 1.15rem;
+      font-family: var(--disp);
+      font-size: 1rem;
       font-weight: 900;
       text-transform: uppercase;
       letter-spacing: 0.04em;
-      line-height: 1.1;
+      line-height: 1.2;
     }
-    .reviewer-location { font-size: 0.82rem; color: var(--gray-text); margin-top: 2px; }
+    .reviewer-loc { font-size: 0.78rem; color: var(--muted); }
 
-    /* Google badge for reviews section */
-    .google-badge {
-      display: inline-flex;
-      align-items: center;
-      gap: 10px;
-      background: #fff;
-      border: 2px solid #000;
-      padding: 8px 18px 8px 12px;
-      margin-bottom: 20px;
+    /* ─────────────────────────────────────────
+       PRICING
+    ───────────────────────────────────────── */
+    #pricing { background: var(--black); }
+    #pricing .label { color: var(--g); }
+    .pricing-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      border: 2px solid #222;
     }
-    .google-badge .g-logo {
-      width: 22px;
-      height: 22px;
-      background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%234285F4' d='M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z'/%3E%3Cpath fill='%2334A853' d='M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z'/%3E%3Cpath fill='%23FBBC05' d='M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z'/%3E%3Cpath fill='%23EA4335' d='M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z'/%3E%3C/svg%3E") center/contain no-repeat;
-      flex-shrink: 0;
+    .price-card {
+      padding: 24px 20px;
+      border-right: 1px solid #222;
+      border-bottom: 1px solid #222;
+      text-align: center;
+      transition: background 0.2s;
     }
-    .google-badge .badge-stars { color: #f5a623; font-size: 0.85rem; letter-spacing: 1px; }
-    .google-badge .badge-text {
-      font-family: var(--type-body);
-      font-size: 0.78rem;
-      font-weight: 600;
-      color: #333;
-      line-height: 1.3;
+    .price-card:hover { background: rgba(61,190,92,0.06); }
+    .price-card.best {
+      border-color: var(--g);
+      background: rgba(61,190,92,0.05);
+      position: relative;
     }
-    .google-badge .badge-text span { display: block; font-weight: 400; color: #777; font-size: 0.72rem; }
-
-    /* ─── SERVICE AREAS ─── */
-    #areas { background: #000; }
-    #areas .section-title { color: #fff; }
-    #areas .section-label { color: var(--green); }
-    #areas .section-sub { color: rgba(255,255,255,.55); }
-    .area-chip {
-      background: #111;
-      border: 2px solid #1f1f1f;
-      padding: 14px 20px;
-      color: #fff;
-      font-family: var(--type-display);
-      font-weight: 800;
-      font-size: 1rem;
-      letter-spacing: 0.06em;
+    .price-card.best::before {
+      content: 'Most Popular';
+      position: absolute;
+      top: -1px; left: 50%;
+      transform: translateX(-50%);
+      background: var(--g);
+      color: var(--black);
+      font-family: var(--disp);
+      font-size: 0.65rem;
+      font-weight: 900;
+      letter-spacing: 0.12em;
       text-transform: uppercase;
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      transition: border-color .2s, background .2s;
+      padding: 3px 12px;
     }
-    .area-chip:hover { border-color: var(--green); background: rgba(61,190,92,.06); }
-    .area-chip::before { content: "📍"; font-size: 0.9rem; }
-
-    /* ─── FAQ ─── */
-    #faq { background: var(--cream); }
-    .faq-item {
-      border: 2px solid #000;
-      overflow: hidden;
-      margin-bottom: 8px;
+    .price-tier {
+      font-family: var(--disp);
+      font-size: 0.68rem;
+      font-weight: 800;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--g);
+      margin-bottom: 4px;
     }
-    .faq-question {
-      width: 100%;
-      text-align: left;
-      background: #fff;
-      border: none;
-      font-family: var(--type-display);
+    .price-name {
+      font-family: var(--disp);
       font-size: 1.2rem;
       font-weight: 900;
       text-transform: uppercase;
-      letter-spacing: 0.02em;
-      color: var(--body-text);
-      padding: 20px 24px;
-      cursor: pointer;
+      color: var(--white);
+      line-height: 1.1;
+      margin-bottom: 12px;
+    }
+    .price-amount {
+      font-family: var(--disp);
+      font-size: clamp(2rem, 5vw, 2.8rem);
+      font-weight: 900;
+      color: var(--white);
+      line-height: 1;
+    }
+    .price-note { font-size: 0.72rem; color: rgba(255,255,255,0.35); margin-top: 4px; }
+    .price-desc { font-size: 0.82rem; color: rgba(255,255,255,0.5); margin-top: 8px; line-height: 1.5; }
+    .pricing-note {
+      display: flex;
+      align-items: flex-start;
+      gap: 16px;
+      background: #111;
+      border: 1px solid #222;
+      padding: 20px;
+      margin-top: 16px;
+    }
+    .pricing-note-icon { font-size: 1.5rem; flex-shrink: 0; }
+    .pricing-note p { font-size: 0.9rem; color: rgba(255,255,255,0.55); line-height: 1.65; margin: 0; }
+    .pricing-note p strong { color: var(--white); }
+
+    /* ─────────────────────────────────────────
+       GALLERY
+    ───────────────────────────────────────── */
+    #gallery { background: var(--off); }
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 8px;
+    }
+    .gallery-item {
+      position: relative;
+      overflow: hidden;
+    }
+    .gallery-item img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.5s var(--ease);
+    }
+    .gallery-item:hover img { transform: scale(1.05); }
+    .gallery-cap {
+      position: absolute;
+      bottom: 0; left: 0; right: 0;
+      background: linear-gradient(transparent, rgba(0,0,0,0.85));
+      color: rgba(255,255,255,0.9);
+      font-family: var(--disp);
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      padding: 20px 12px 10px;
+    }
+
+    /* ─────────────────────────────────────────
+       SERVICE AREAS
+    ───────────────────────────────────────── */
+    #areas { background: var(--black); }
+    #areas .label { color: var(--g); }
+    .areas-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 8px;
+      margin-top: 28px;
+    }
+    .area-chip {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      background: #111;
+      border: 1px solid #1f1f1f;
+      padding: 12px 16px;
+      font-family: var(--disp);
+      font-size: 0.88rem;
+      font-weight: 800;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.75);
+      transition: border-color 0.2s, background 0.2s;
+    }
+    .area-chip:hover { border-color: var(--g); background: rgba(61,190,92,0.05); }
+    .area-chip::before { content: '📍'; font-size: 0.75rem; }
+
+    /* ─────────────────────────────────────────
+       FAQ
+    ───────────────────────────────────────── */
+    #faq { background: var(--cream); }
+    .faq-list { display: flex; flex-direction: column; gap: 0; }
+    .faq-item {
+      border-bottom: 1px solid #ddd8cf;
+    }
+    .faq-item:first-child { border-top: 2px solid var(--black); }
+    .faq-btn {
+      width: 100%;
       display: flex;
       justify-content: space-between;
       align-items: center;
       gap: 16px;
-      transition: background .15s;
-    }
-    .faq-question:hover { background: #f9f9f9; }
-    .faq-item.open .faq-question { background: #000; color: #fff; }
-    .faq-arrow {
-      color: var(--green);
-      font-size: 1.6rem;
-      font-family: var(--type-display);
+      padding: 20px 0;
+      background: none;
+      border: none;
+      text-align: left;
+      cursor: pointer;
+      font-family: var(--disp);
+      font-size: 1.05rem;
       font-weight: 900;
-      transition: transform .3s;
+      text-transform: uppercase;
+      letter-spacing: 0.02em;
+      color: var(--text);
+      transition: color 0.15s;
+    }
+    .faq-btn:hover { color: var(--g); }
+    .faq-arrow {
+      font-family: var(--disp);
+      font-size: 1.5rem;
+      font-weight: 900;
+      color: var(--g);
+      transition: transform 0.3s;
       flex-shrink: 0;
       line-height: 1;
     }
-    .faq-item.open .faq-arrow { transform: rotate(45deg); color: var(--green); }
-    .faq-answer {
+    .faq-item.open .faq-arrow { transform: rotate(45deg); }
+    .faq-body {
       max-height: 0;
       overflow: hidden;
-      transition: max-height .35s ease;
+      transition: max-height 0.35s ease;
     }
-    .faq-item.open .faq-answer { max-height: 300px; }
-    .faq-answer p {
-      padding: 0 24px 22px;
-      font-size: 1rem;
-      color: var(--gray-text);
-      line-height: 1.7;
-      margin: 0;
+    .faq-item.open .faq-body { max-height: 260px; }
+    .faq-body p {
+      padding-bottom: 20px;
+      font-size: 0.95rem;
+      color: var(--muted);
+      line-height: 1.75;
     }
 
-    /* ─── FINAL CTA ─── */
-    #cta-section {
-      background: var(--green);
-      padding: 110px 0;
+    /* ─────────────────────────────────────────
+       FINAL CTA
+    ───────────────────────────────────────── */
+    #cta {
+      background: var(--g);
+      border-top: 2px solid var(--black);
       text-align: center;
-      border-top: 3px solid #000;
-      border-bottom: 3px solid #000;
+      padding: 72px 0;
     }
-    #cta-section h2 {
-      font-family: var(--type-display);
-      font-size: clamp(2.8rem, 6vw, 5.5rem);
+    #cta h2 {
+      font-family: var(--disp);
+      font-size: clamp(2.4rem, 7vw, 5rem);
       font-weight: 900;
-      color: #000;
       text-transform: uppercase;
-      letter-spacing: -0.01em;
+      color: var(--black);
       line-height: 0.95;
-      margin-bottom: 1.25rem;
+      margin-bottom: 16px;
+      letter-spacing: -0.01em;
     }
-    #cta-section p {
-      font-size: 1.1rem;
-      color: rgba(0,0,0,.65);
-      margin-bottom: 2.5rem;
-      max-width: 520px;
+    #cta p {
+      font-size: 1rem;
+      color: rgba(0,0,0,0.65);
+      margin-bottom: 32px;
+      max-width: 480px;
       margin-left: auto;
       margin-right: auto;
     }
-
-    /* ─── FOOTER ─── */
-    footer {
-      background: #000;
-      color: #fff;
-      padding: 72px 0 36px;
-    }
-    footer .logo img { height: 52px; margin-bottom: 1.25rem; }
-    footer p.footer-desc {
-      color: rgba(255,255,255,.45);
-      font-size: 0.9rem;
-      line-height: 1.8;
-      max-width: 300px;
-    }
-    footer .footer-phone {
-      display: inline-flex;
+    .cta-buttons {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
       align-items: center;
-      gap: 8px;
-      font-family: var(--type-display);
-      font-size: 1.6rem;
-      font-weight: 900;
-      letter-spacing: 0.02em;
-      color: var(--green);
-      margin-top: 1.25rem;
-      text-transform: uppercase;
     }
-    footer h5 {
-      font-family: var(--type-display);
-      font-size: 0.75rem;
+
+    /* ─────────────────────────────────────────
+       FOOTER
+    ───────────────────────────────────────── */
+    footer {
+      background: var(--black);
+      border-top: 1px solid #1a1a1a;
+      padding: 56px 0 28px;
+      color: var(--white);
+    }
+    .footer-logo img { height: 46px; margin-bottom: 16px; }
+    .footer-desc {
+      font-size: 0.88rem;
+      color: rgba(255,255,255,0.4);
+      line-height: 1.75;
+      max-width: 280px;
+      margin-bottom: 20px;
+    }
+    .footer-phone {
+      font-family: var(--disp);
+      font-size: 1.4rem;
+      font-weight: 900;
+      text-transform: uppercase;
+      color: var(--g);
+      letter-spacing: 0.02em;
+    }
+    .footer-col h5 {
+      font-family: var(--disp);
+      font-size: 0.68rem;
       font-weight: 800;
       letter-spacing: 0.18em;
       text-transform: uppercase;
-      color: var(--green);
-      margin-bottom: 1rem;
+      color: var(--g);
+      margin-bottom: 16px;
     }
-    footer ul { list-style: none; padding: 0; margin: 0; }
-    footer ul li { margin-bottom: .6rem; }
-    footer ul li a {
-      color: rgba(255,255,255,.5);
-      font-size: 0.9rem;
-      transition: color .15s;
+    .footer-col ul { list-style: none; }
+    .footer-col ul li { margin-bottom: 8px; }
+    .footer-col ul a {
+      font-size: 0.88rem;
+      color: rgba(255,255,255,0.4);
+      transition: color 0.15s;
     }
-    footer ul li a:hover { color: var(--green); }
+    .footer-col ul a:hover { color: var(--g); }
     .footer-bottom {
       border-top: 1px solid #1a1a1a;
-      padding-top: 28px;
-      margin-top: 56px;
-      display: flex;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      gap: 8px;
+      padding-top: 24px;
+      margin-top: 48px;
+      font-size: 0.75rem;
+      color: rgba(255,255,255,0.25);
     }
-    .footer-bottom p { color: rgba(255,255,255,.28); font-size: 0.78rem; margin: 0; }
 
-    /* ─── FLOATING CTA ─── */
-    #float-cta {
-      display: none;
+    /* ─────────────────────────────────────────
+       STICKY MOBILE CTA BAR
+    ───────────────────────────────────────── */
+    #mobile-bar {
       position: fixed;
-      bottom: 24px;
-      right: 24px;
-      z-index: 999;
+      bottom: 0; left: 0; right: 0;
+      z-index: 800;
+      display: flex;
+      border-top: 2px solid var(--black);
+      transform: translateY(0);
+      transition: transform 0.3s;
     }
-    #float-cta a {
+    #mobile-bar a {
+      flex: 1;
       display: flex;
       align-items: center;
-      gap: 10px;
-      background: var(--green);
-      color: #000;
-      padding: 16px 24px;
-      border: 3px solid #000;
-      font-family: var(--type-display);
+      justify-content: center;
+      gap: 6px;
+      height: 56px;
+      font-family: var(--disp);
+      font-size: 1rem;
       font-weight: 900;
-      font-size: 1.05rem;
       letter-spacing: 0.06em;
       text-transform: uppercase;
-      box-shadow: 4px 4px 0 #000;
-      transition: transform .2s, box-shadow .2s;
     }
-    #float-cta a:hover {
-      box-shadow: 2px 2px 0 #000;
-      transform: translateY(2px) translateX(2px);
+    #mobile-bar .bar-call {
+      background: var(--g);
+      color: var(--black);
+      border-right: 2px solid var(--black);
     }
-
-    /* ─── PRO / B2B SECTION ─── */
-    #pro-section {
-      background: #000;
-      border-top: 3px solid var(--green);
-      border-bottom: 3px solid var(--green);
-    }
-    #pro-section .section-title { color: #fff; }
-    .pro-benefit {
-      border-left: 3px solid var(--green);
-      padding-left: 20px;
-      margin-bottom: 2rem;
-    }
-    .pro-benefit:last-child { margin-bottom: 0; }
-    .pro-benefit h4 {
-      font-family: var(--type-display);
-      font-size: 1.25rem;
-      font-weight: 900;
-      color: #fff;
-      text-transform: uppercase;
-      letter-spacing: 0.04em;
-      margin-bottom: 6px;
-      line-height: 1.1;
-    }
-    .pro-benefit p { font-size: 0.95rem; color: rgba(255,255,255,.58); margin: 0; line-height: 1.65; }
-    .pro-eyebrow {
-      display: inline-block;
-      background: var(--green);
-      color: #000;
-      font-family: var(--type-display);
-      font-size: 0.75rem;
-      font-weight: 900;
-      letter-spacing: 0.18em;
-      text-transform: uppercase;
-      padding: 6px 14px;
-      margin-bottom: 20px;
+    #mobile-bar .bar-text {
+      background: var(--black);
+      color: var(--white);
     }
 
-    /* ─── SCROLL ANIMATIONS ─── */
+    /* ─────────────────────────────────────────
+       HELPERS
+    ───────────────────────────────────────── */
+    .d-none-mobile { display: none; }
+
+    /* ─────────────────────────────────────────
+       SCROLL REVEAL
+    ───────────────────────────────────────── */
     .reveal {
       opacity: 0;
-      transform: translateY(32px);
-      transition: opacity .7s var(--ease-reveal), transform .7s var(--ease-reveal);
+      transform: translateY(24px);
+      transition: opacity 0.6s var(--ease), transform 0.6s var(--ease);
     }
-    .reveal.revealed { opacity: 1; transform: translateY(0); }
+    .reveal.on { opacity: 1; transform: none; }
 
-    .reveal-left {
-      opacity: 0;
-      transform: translateX(-40px);
-      transition: opacity .7s var(--ease-reveal), transform .7s var(--ease-reveal);
+    /* ─────────────────────────────────────────
+       DESKTOP LAYOUT (768px+)
+    ───────────────────────────────────────── */
+    @media (min-width: 768px) {
+      .d-none-mobile { display: block; }
+
+      .btn { height: 64px; font-size: 1.25rem; }
+      .btn-full { width: auto; }
+
+      .hero-cta-stack { flex-direction: row; align-items: center; }
+
+      .services-grid { grid-template-columns: repeat(3, 1fr); }
+      .svc-card { border-bottom: none; border-right: 2px solid var(--black); }
+      .svc-card:last-child { border-right: none; }
+
+      .process-list { flex-direction: row; gap: 48px; }
+      .process-step { flex-direction: column; padding: 0; border-bottom: none; border-top: 3px solid var(--g); padding-top: 24px; }
+      .process-num { text-align: left; width: auto; }
+
+      .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0; align-items: stretch; }
+      .about-photo img { height: 100%; min-height: 500px; }
+      .about-body { padding: 48px 48px; }
+
+      .pro-grid { grid-template-columns: repeat(2, 1fr); }
+
+      .reviews-list { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0; }
+      .review-item { padding: 28px 24px; border-bottom: none; border-right: 1px solid var(--border); }
+      .review-item:first-child { border-top: 2px solid var(--black); }
+      .review-item:last-child { border-right: none; }
+
+      .pricing-grid { grid-template-columns: repeat(4, 1fr); }
+      .price-card { border-bottom: none; }
+
+      .gallery-grid { grid-template-columns: repeat(3, 1fr); }
+      .gallery-item img { height: 260px; }
+
+      .areas-grid { grid-template-columns: repeat(4, 1fr); }
+
+      .cta-buttons { flex-direction: row; justify-content: center; }
+
+      .footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 48px; }
+
+      #mobile-bar { display: none; }
+      #marquee-strip { display: block; }
+      #static-strip { display: none !important; }
+
+      .nav-links { display: flex; }
+      .header-phone { display: flex; }
+      .hamburger { display: none; }
     }
-    .reveal-left.revealed { opacity: 1; transform: translateX(0); }
 
-    .reveal-scale {
-      opacity: 0;
-      transform: scale(0.92);
-      transition: opacity .6s var(--ease-reveal), transform .6s var(--ease-reveal);
-    }
-    .reveal-scale.revealed { opacity: 1; transform: scale(1); }
-
-    /* Clip-path heading reveal */
-    .clip-reveal {
-      clip-path: inset(0 100% 0 0);
-      transition: clip-path .9s var(--ease-reveal);
-    }
-    .clip-reveal.revealed { clip-path: inset(0 0% 0 0); }
-
-    /* ─── RESPONSIVE ─── */
-    @media (max-width: 991px) {
-      #primary-menu { display: none; }
-      .menu-toggle { display: block; }
-      .about-img { display: none; }
-    }
-
+    /* Mobile-specific adjustments */
     @media (max-width: 767px) {
-      body { font-size: 1rem; }
+      .section-pad { padding: 52px 0; }
+      .section-pad-lg { padding: 64px 0; }
 
-      #site-header { padding: 8px 0; }
-      #site-header .logo img { height: 42px; }
+      /* space for sticky bottom bar */
+      body { padding-bottom: 56px; }
 
-      .btn-primary-custom,
-      .btn-secondary-custom,
-      .btn-white-custom,
-      .btn-outline-green {
-        min-width: 0;
-        width: 100%;
-        min-height: 56px;
-        font-size: 1.2rem;
-      }
-      .hero-buttons { flex-direction: column; }
+      #marquee-strip { display: none; }
+      #static-strip { display: block; }
 
-      #hero .hero-content { padding: 80px 0 60px; }
-      #hero h1 { font-size: clamp(2.8rem, 11vw, 4.5rem); }
-      #hero p.hero-sub { font-size: 1rem; }
+      /* Pricing 2x2 */
+      .pricing-grid { grid-template-columns: repeat(2, 1fr); }
+      .price-card { border-bottom: 1px solid #222; }
+      .price-card:nth-child(even) { border-right: none; }
+      .price-card:nth-last-child(-n+2) { border-bottom: none; }
 
-      .hero-stats-panel {
-        flex-wrap: wrap;
-        width: 100%;
-      }
-      .hero-stat {
-        flex: 1 1 45%;
-        border-right: none;
-        border-bottom: 1px solid rgba(255,255,255,.15);
-        padding: 16px 20px;
-      }
-      .hero-stat:nth-child(odd) { border-right: 1px solid rgba(255,255,255,.15); }
-      .hero-stat strong { font-size: 2rem; }
+      /* FAQ smaller text */
+      .faq-btn { font-size: 0.92rem; }
 
-      .py-section { padding: 64px 0; }
-      .section-title { font-size: clamp(2rem, 8vw, 3rem); }
+      /* Gallery 2 col */
+      .gallery-grid { grid-template-columns: repeat(2, 1fr); }
 
-      .service-card { padding: 1.75rem 1.25rem; }
-      .service-card h3 { font-size: 1.5rem; }
+      /* CTA stack */
+      #cta .cta-buttons .btn { width: 100%; max-width: 360px; }
 
-      .step-box { padding: 1.5rem 1rem; }
-      .step-number-bg { font-size: 6rem; }
-      .step-box h3 { font-size: 1.5rem; }
-
-      .price-card { padding: 1.25rem 1rem; }
-      .price-amount { font-size: 2.4rem; }
-      .pricing-callout { flex-direction: column; gap: .75rem; font-size: 0.9rem; }
-
-      .gallery-item img { height: 220px; }
-
-      .review-card { padding: 1.5rem 1.25rem; }
-      .review-text { font-size: 0.95rem; }
-
-      .area-chip { padding: 10px 14px; font-size: 0.88rem; }
-
-      #cta-section { padding: 72px 0; }
-      #cta-section h2 { font-size: clamp(2.2rem, 9vw, 3.5rem); }
-
-      .why-item { gap: 14px; }
-      .why-item h4 { font-size: 1.2rem; }
-
-      .faq-question { font-size: 1rem; padding: 16px 18px; }
-
-      .footer-bottom { flex-direction: column; gap: 4px; }
+      /* Footer stack */
+      .footer-cols { display: flex; flex-direction: column; gap: 36px; }
     }
 
-    /* Pro section mobile */
-    @media (max-width: 767px) {
-      #pro-section .section-title { font-size: clamp(2rem, 8vw, 3rem); }
-      .pro-benefit { margin-bottom: 1.5rem; }
-      .pro-benefit h4 { font-size: 1.1rem; }
-      .pro-benefit p { font-size: 0.9rem; }
-    }
-
-    @media (max-width: 480px) {
-      .hero-stat { flex: 1 1 100%; }
-      .hero-stat:nth-child(odd) { border-right: none; }
-      .price-card { padding: 1rem; }
-      .price-amount { font-size: 2rem; }
-      .pro-eyebrow { font-size: 0.7rem; }
-      .gallery-item img { height: 180px; }
-      #cta-section h2 { font-size: 2rem; }
-      .step-number-bg { font-size: 5rem; opacity: 0.04; }
+    @media (max-width: 400px) {
+      #hero h1 { font-size: 2.6rem; }
+      .proof-num { font-size: 1.8rem; }
+      .areas-grid { grid-template-columns: 1fr; }
+      .pricing-grid { grid-template-columns: 1fr; }
+      .price-card { border-right: none; border-bottom: 1px solid #222; }
+      .price-card:last-child { border-bottom: none; }
     }
   </style>
 </head>
 <body>
 
-<!-- Mobile Nav Sidebar -->
-<div class="mobile-overlay" id="mobileOverlay" onclick="closeMobileNav()"></div>
-<nav id="mobile-nav">
-  <button id="mobile-nav-close" onclick="closeMobileNav()">✕</button>
-  <a href="services.html" onclick="closeMobileNav()">Services</a>
-  <a href="demo.html" onclick="closeMobileNav()">Demo &amp; Teardown</a>
-  <a href="trucks.html" onclick="closeMobileNav()">Our Trucks</a>
-  <a href="about.html" onclick="closeMobileNav()">About Us</a>
-  <a href="tel:5092516096" class="btn-primary-custom mt-3" style="min-width:auto;font-size:1.1rem;min-height:52px;">📞 509-251-6096</a>
-</nav>
+<!-- ─── NAV DRAWER ─── -->
+<div id="nav-drawer">
+  <div class="drawer-overlay" onclick="closeDrawer()"></div>
+  <div class="drawer-panel">
+    <button class="drawer-close" onclick="closeDrawer()">✕</button>
+    <a href="services.html" onclick="closeDrawer()">Services</a>
+    <a href="demo.html" onclick="closeDrawer()">Demo & Teardown</a>
+    <a href="trucks.html" onclick="closeDrawer()">Our Trucks</a>
+    <a href="about.html" onclick="closeDrawer()">About Us</a>
+    <a href="tel:5092516096" class="drawer-call">📞 Call 509-251-6096</a>
+  </div>
+</div>
 
 <!-- ─── HEADER ─── -->
-<header id="site-header">
+<header id="header">
   <div class="container">
-    <div class="d-flex align-items-center justify-content-between">
-      <a href="/" class="logo">
-        <img src="images/logo.png" alt="Simple Junk Removal" />
-      </a>
-      <nav class="d-none d-lg-flex">
-        <ul id="primary-menu">
-          <li><a href="services.html">Services</a></li>
-          <li><a href="demo.html">Demo &amp; Teardown</a></li>
-          <li><a href="trucks.html">Our Trucks</a></li>
-          <li><a href="about.html">About Us</a></li>
-        </ul>
-      </nav>
-      <div class="d-flex align-items-center gap-3">
-        <a href="tel:5092516096" class="header-cta d-none d-md-inline-flex">📞 509-251-6096</a>
-        <button class="menu-toggle d-lg-none" onclick="openMobileNav()" aria-label="Open menu">
-          <span></span><span></span><span></span>
-        </button>
-      </div>
+    <a href="/" aria-label="Simple Junk Removal Home">
+      <img src="images/logo.png" alt="Simple Junk Removal" style="height:46px;width:auto;" />
+    </a>
+    <ul class="nav-links">
+      <li><a href="services.html">Services</a></li>
+      <li><a href="demo.html">Demo & Teardown</a></li>
+      <li><a href="trucks.html">Our Trucks</a></li>
+      <li><a href="about.html">About Us</a></li>
+    </ul>
+    <div style="display:flex;align-items:center;gap:16px;">
+      <a href="tel:5092516096" class="header-phone">📞 509-251-6096</a>
+      <button class="hamburger" onclick="openDrawer()" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
     </div>
   </div>
 </header>
 
 <!-- ─── HERO ─── -->
 <section id="hero">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-9 hero-content" id="hero-content">
-        <p class="hero-eyebrow" style="opacity:0;transform:translateX(-20px);transition:opacity .6s ease .1s, transform .6s ease .1s;">Junk Removal — Coeur d'Alene &amp; Spokane</p>
-        <h1 style="opacity:0;transform:translateY(20px);transition:opacity .7s ease .25s, transform .7s ease .25s;">
-          Junk Removal<br>
-          <span class="accent">Done Right.</span><br>
-          <span class="outline">Every Time.</span>
-        </h1>
-        <p class="hero-sub" style="opacity:0;transition:opacity .7s ease .45s;">Flat-rate quote before we touch anything. Owners answer every call. Owners show up to every job. On-site in 24–48 hours. The go-to haul crew for homeowners, contractors &amp; realtors across CDA &amp; Spokane.</p>
-        <div class="hero-buttons" style="opacity:0;transition:opacity .7s ease .6s;">
-          <a href="tel:5092516096" class="btn-primary-custom">📞 Call 509-251-6096</a>
-          <a href="#pricing" class="btn-secondary-custom d-none d-sm-inline-flex">See Our Pricing</a>
-        </div>
-        <div class="hero-stats-panel" style="opacity:0;transition:opacity .8s ease .75s;">
-          <div class="hero-stat">
-            <strong data-count="5" data-suffix="★">5★</strong>
-            <span>Google Rated</span>
-          </div>
-          <div class="hero-stat">
-            <strong data-count="100" data-suffix="+">100+</strong>
-            <span>Jobs Completed</span>
-          </div>
-          <div class="hero-stat">
-            <strong>24–48hr</strong>
-            <span>On-Site</span>
-          </div>
-          <div class="hero-stat">
-            <strong>$99</strong>
-            <span>Starting Price</span>
-          </div>
-        </div>
+  <div class="container hero-inner">
+    <div class="hero-badge">CDA &amp; Spokane's Go-To Haul Crew</div>
+    <h1>Junk Removal<br><em>Done Right.</em><br>Every Time.</h1>
+    <p class="hero-sub">Flat-rate quote before we touch anything. Owners answer every call. Owners on every job. On-site in 24–48 hours.</p>
+    <div class="hero-cta-stack">
+      <a href="tel:5092516096" class="btn btn-green btn-full">📞 Call 509-251-6096</a>
+      <a href="#pricing" class="btn btn-outline-white" style="min-width:180px;">See Pricing</a>
+    </div>
+    <div class="hero-trust">
+      <div class="hero-trust-item">
+        <span class="stars">★★★★★</span>
+        5-Star Rated
       </div>
+      <div class="hero-trust-item"><span class="dot"></span>100+ Jobs Done</div>
+      <div class="hero-trust-item"><span class="dot"></span>From $99</div>
+      <div class="hero-trust-item"><span class="dot"></span>No Surprise Fees</div>
     </div>
   </div>
 </section>
 
-<!-- ─── MARQUEE TRUST STRIP ─── -->
-<div id="trust-strip" aria-label="Trust signals">
-  <div class="marquee-wrapper">
-    <div class="marquee-track" aria-hidden="true">
-      <span class="marquee-item">Owner Answers Every Call</span><span class="marquee-sep">◆</span>
-      <span class="marquee-item">Owners Show Up to Every Job</span><span class="marquee-sep">◆</span>
-      <span class="marquee-item">Flat-Rate Quote Upfront</span><span class="marquee-sep">◆</span>
-      <span class="marquee-item">No Hidden Fees. Ever.</span><span class="marquee-sep">◆</span>
-      <span class="marquee-item">100% Five-Star Rated</span><span class="marquee-sep">◆</span>
-      <span class="marquee-item">On-Site in 24–48 Hours</span><span class="marquee-sep">◆</span>
-      <span class="marquee-item">Serving CDA &amp; Spokane</span><span class="marquee-sep">◆</span>
-      <span class="marquee-item">Contractors &amp; Realtors Welcome</span><span class="marquee-sep">◆</span>
-      <span class="marquee-item">Owner Answers Every Call</span><span class="marquee-sep">◆</span>
-      <span class="marquee-item">Owners Show Up to Every Job</span><span class="marquee-sep">◆</span>
-      <span class="marquee-item">Flat-Rate Quote Upfront</span><span class="marquee-sep">◆</span>
-      <span class="marquee-item">No Hidden Fees. Ever.</span><span class="marquee-sep">◆</span>
-      <span class="marquee-item">100% Five-Star Rated</span><span class="marquee-sep">◆</span>
-      <span class="marquee-item">On-Site in 24–48 Hours</span><span class="marquee-sep">◆</span>
-      <span class="marquee-item">Serving CDA &amp; Spokane</span><span class="marquee-sep">◆</span>
-      <span class="marquee-item">Contractors &amp; Realtors Welcome</span><span class="marquee-sep">◆</span>
+<!-- ─── PROOF STRIP ─── -->
+<div id="proof-strip">
+  <div class="container">
+    <div class="proof-grid">
+      <div class="proof-item">
+        <span class="proof-num">5★</span>
+        <span class="proof-label">Google Rated</span>
+      </div>
+      <div class="proof-item">
+        <span class="proof-num">100+</span>
+        <span class="proof-label">Jobs Completed</span>
+      </div>
+      <div class="proof-item">
+        <span class="proof-num">$99</span>
+        <span class="proof-label">Starting Price</span>
+      </div>
     </div>
   </div>
 </div>
 
+<!-- ─── MARQUEE (desktop) / STATIC STRIP (mobile) ─── -->
+<div id="marquee-strip">
+  <div class="mq-wrapper">
+    <div class="mq-track">
+      <span class="mq-item">Owner Answers Every Call<span class="mq-dot"></span></span>
+      <span class="mq-item">Owners on Every Job<span class="mq-dot"></span></span>
+      <span class="mq-item">Flat-Rate Quote Upfront<span class="mq-dot"></span></span>
+      <span class="mq-item">No Hidden Fees. Ever.<span class="mq-dot"></span></span>
+      <span class="mq-item">100% Five-Star Rated<span class="mq-dot"></span></span>
+      <span class="mq-item">On-Site in 24–48 Hours<span class="mq-dot"></span></span>
+      <span class="mq-item">Contractors &amp; Realtors Welcome<span class="mq-dot"></span></span>
+      <span class="mq-item">Owner Answers Every Call<span class="mq-dot"></span></span>
+      <span class="mq-item">Owners on Every Job<span class="mq-dot"></span></span>
+      <span class="mq-item">Flat-Rate Quote Upfront<span class="mq-dot"></span></span>
+      <span class="mq-item">No Hidden Fees. Ever.<span class="mq-dot"></span></span>
+      <span class="mq-item">100% Five-Star Rated<span class="mq-dot"></span></span>
+      <span class="mq-item">On-Site in 24–48 Hours<span class="mq-dot"></span></span>
+      <span class="mq-item">Contractors &amp; Realtors Welcome<span class="mq-dot"></span></span>
+    </div>
+  </div>
+</div>
+<div id="static-strip">
+  <div class="static-strip-inner">
+    <div class="strip-item">Owner Answers Every Call — No Call Center</div>
+    <div class="strip-item">Flat-Rate Quote Before We Touch Anything</div>
+    <div class="strip-item">On-Site in 24–48 Hours</div>
+    <div class="strip-item">100% Five-Star Google Rated</div>
+  </div>
+</div>
+
 <!-- ─── SERVICES ─── -->
-<section id="services" class="py-section">
+<section id="services" class="section-pad">
   <div class="container">
-    <div class="row align-items-end mb-5">
-      <div class="col-lg-7 reveal">
-        <p class="section-label">What We Do</p>
-        <h2 class="section-title">You Point.<br><span class="accent">We Remove It.</span></h2>
+    <div class="reveal" style="margin-bottom:32px;">
+      <p class="label" style="margin-bottom:10px;">What We Do</p>
+      <h2 class="headline headline-lg">You Point.<br><span class="green">We Remove It.</span></h2>
+    </div>
+    <div class="services-grid reveal">
+      <div class="svc-card">
+        <div class="svc-icon">🗑️</div>
+        <h3>Junk Removal</h3>
+        <p>We haul away anything you no longer need — quickly, cleanly, at a flat rate you know before we start.</p>
+        <ul class="svc-list">
+          <li>Furniture</li><li>Appliances</li><li>Yard Debris</li>
+          <li>Electronics</li><li>Hot Tubs</li><li>Swing Sets</li>
+        </ul>
       </div>
-      <div class="col-lg-5 reveal">
-        <p class="section-sub">From a single couch to an entire property cleanout — we handle it all with the same care and professionalism on every job.</p>
+      <div class="svc-card">
+        <div class="svc-icon">🏠</div>
+        <h3>Garage &amp; Attic Cleanouts</h3>
+        <p>Years of stuff piled up? We clear it out fast so you get your space back without lifting a finger.</p>
+        <ul class="svc-list">
+          <li>Full Garages</li><li>Basements</li><li>Estate Cleanouts</li>
+          <li>Hoarder Situations</li><li>Storage Units</li>
+        </ul>
+      </div>
+      <div class="svc-card">
+        <div class="svc-icon">🔨</div>
+        <h3>Shed &amp; Structure Demo</h3>
+        <p>Old shed, deck, or structure that needs to go? We tear it down, haul it away, leave the site clean.</p>
+        <ul class="svc-list">
+          <li>Shed Demo</li><li>Deck Removal</li><li>Fence Teardown</li>
+          <li>Swing Sets</li><li>Small Structures</li>
+        </ul>
       </div>
     </div>
-    <div class="row g-4">
-      <div class="col-lg-4 reveal" data-delay="0">
-        <div class="service-card">
-          <div class="service-icon">🗑️</div>
-          <h3>Junk Removal</h3>
-          <p>We haul away anything you no longer need — quickly, cleanly, and at a flat rate you know before we start.</p>
-          <ul>
-            <li>Furniture &amp; appliances</li>
-            <li>Yard waste &amp; debris</li>
-            <li>Old electronics</li>
-            <li>Construction materials</li>
-            <li>Hot tubs &amp; swing sets</li>
-          </ul>
-        </div>
-      </div>
-      <div class="col-lg-4 reveal" data-delay="120">
-        <div class="service-card">
-          <div class="service-icon">🏠</div>
-          <h3>Garage &amp; Attic Cleanouts</h3>
-          <p>Years of stuff piled up? We clear it out fast so you get your space back without lifting a finger.</p>
-          <ul>
-            <li>Full garage cleanouts</li>
-            <li>Basement clearing</li>
-            <li>Estate cleanouts</li>
-            <li>Hoarder situations</li>
-            <li>Storage unit cleanouts</li>
-          </ul>
-        </div>
-      </div>
-      <div class="col-lg-4 reveal" data-delay="240">
-        <div class="service-card">
-          <div class="service-icon">🔨</div>
-          <h3>Shed &amp; Structure Demo</h3>
-          <p>Old shed, deck, or structure that needs to go? We tear it down, haul it away, and leave the site clean.</p>
-          <ul>
-            <li>Shed demolition</li>
-            <li>Deck removal</li>
-            <li>Fence teardown</li>
-            <li>Swing set removal</li>
-            <li>Small structure demo</li>
-          </ul>
-        </div>
-      </div>
+    <div style="margin-top:24px;" class="reveal">
+      <a href="services.html" class="btn btn-outline-black">See All Services →</a>
     </div>
   </div>
 </section>
 
 <!-- ─── HOW IT WORKS ─── -->
-<section id="how-it-works" class="py-section">
+<section id="process" class="section-pad">
   <div class="container">
-    <div class="text-center mb-5 reveal">
-      <p class="section-label label-center">Simple Process</p>
-      <h2 class="section-title">3 Steps to a <span class="accent">Clutter-Free Space</span></h2>
+    <div class="reveal" style="margin-bottom:36px;">
+      <p class="label" style="margin-bottom:10px;">Simple Process</p>
+      <h2 class="headline headline-lg">3 Steps. <span class="green">Done.</span></h2>
     </div>
-    <div class="row g-0">
-      <div class="col-lg-4 reveal" data-delay="0">
-        <div class="step-box">
-          <div class="step-number-bg">01</div>
-          <div class="step-number">Step 01</div>
+    <div class="process-list reveal">
+      <div class="process-step">
+        <div class="process-num">01</div>
+        <div class="process-text">
           <h3>Call or Text Us</h3>
-          <p>An owner — not an answering service — picks up. Tell us what you've got and we'll set a time that works for you.</p>
+          <p>An owner — not an answering service — picks up. Tell us what you've got and we'll find a time that works for you.</p>
         </div>
       </div>
-      <div class="col-lg-4 reveal" data-delay="150">
-        <div class="step-box">
-          <div class="step-number-bg">02</div>
-          <div class="step-number">Step 02</div>
+      <div class="process-step">
+        <div class="process-num">02</div>
+        <div class="process-text">
           <h3>Get a Flat-Rate Quote</h3>
-          <p>We give you an exact price before anything moves. No hourly surprises, no hidden fees — ever.</p>
+          <p>We give you an exact price before anything moves. No hourly surprises, no hidden fees — ever. The number you hear is the number you pay.</p>
         </div>
       </div>
-      <div class="col-lg-4 reveal" data-delay="300">
-        <div class="step-box">
-          <div class="step-number-bg">03</div>
-          <div class="step-number">Step 03</div>
+      <div class="process-step">
+        <div class="process-num">03</div>
+        <div class="process-text">
           <h3>We Do the Heavy Lifting</h3>
-          <p>You point, we remove. We load everything, haul it away, and leave your space clean. Done.</p>
+          <p>You point, we remove. We load everything, haul it away, and leave your space clean. Done — faster than you expect.</p>
+        </div>
+      </div>
+    </div>
+    <div style="margin-top:36px;" class="reveal">
+      <a href="tel:5092516096" class="btn btn-green">📞 Call 509-251-6096 — It's an Owner</a>
+    </div>
+  </div>
+</section>
+
+<!-- ─── ABOUT ─── -->
+<section id="about">
+  <div class="about-grid">
+    <div class="about-photo d-none-mobile reveal">
+      <img src="images/about-team.jpg" alt="Frank and Romen — Simple Junk Removal owners" />
+      <div class="about-photo-label">Frank &amp; Romen — Your Crew</div>
+    </div>
+    <div class="about-body reveal">
+      <p class="label" style="margin-bottom:10px;">Why Simple Junk Removal</p>
+      <h2 class="headline headline-lg" style="margin-bottom:20px;">You Deserve to Know Who's <span class="green">Coming to Your Property.</span></h2>
+      <p>My name's Frank. My brother Romen and I grew up right here in Coeur d'Alene. When someone trusts you with their property, you don't let them down — that's how we were raised.</p>
+      <p>You know our names before we pull up. You know the price before we touch a thing. When the job's done, it's actually done.</p>
+      <div class="why-list">
+        <div class="why-row">
+          <div class="why-icon">📞</div>
+          <div>
+            <h4>Owner Answers Every Call</h4>
+            <p>You're talking to Frank or Romen directly — every single time.</p>
+          </div>
+        </div>
+        <div class="why-row">
+          <div class="why-icon">🚛</div>
+          <div>
+            <h4>Owner on Every Job</h4>
+            <p>The same faces that answered the phone pull up to your driveway.</p>
+          </div>
+        </div>
+        <div class="why-row">
+          <div class="why-icon">💰</div>
+          <div>
+            <h4>Flat-Rate. Locked In Before We Start.</h4>
+            <p>The number you're told is the number you pay. Period.</p>
+          </div>
+        </div>
+        <div class="why-row">
+          <div class="why-icon">⚡</div>
+          <div>
+            <h4>On-Site Within 24–48 Hours</h4>
+            <p>Most jobs are booked and completed within two days of your call.</p>
+          </div>
         </div>
       </div>
     </div>
@@ -1408,91 +1378,85 @@
 </section>
 
 <!-- ─── CONTRACTORS & REALTORS ─── -->
-<section id="pro-section" class="py-section">
+<section id="pro" class="section-pad">
   <div class="container">
-    <div class="row g-5 align-items-center">
-      <div class="col-lg-5 reveal-left">
-        <div class="pro-eyebrow">For Contractors &amp; Realtors</div>
-        <h2 class="section-title" style="color:#fff;">Stop Shopping<br>for a Haul Crew.<br><span class="accent">We're Your Last Call.</span></h2>
-        <p style="color:rgba(255,255,255,.6);font-size:1rem;line-height:1.75;margin-bottom:2rem;">You need a crew that shows up when you need them, does the job without excuses, and leaves the site clean. Call us once — and we become the number in your phone you never have to question again.</p>
-        <a href="tel:5092516096" class="btn-primary-custom">📞 Talk to an Owner</a>
+    <div class="reveal" style="max-width:640px;">
+      <div class="pro-badge">For Contractors &amp; Realtors</div>
+      <h2 class="headline headline-lg white" style="margin-bottom:16px;">Stop Shopping for a<br>Haul Crew.<br><span class="green">We're Your Last Call.</span></h2>
+      <p style="color:rgba(255,255,255,0.55);font-size:0.95rem;line-height:1.75;margin-bottom:8px;">You need a crew that shows up when they say, prices it fair, and leaves the site clean. Call us once — and we become the number you never have to question again.</p>
+    </div>
+    <div class="pro-grid reveal">
+      <div class="pro-item">
+        <h4>Priority 24–48hr Scheduling</h4>
+        <p>We work around your project timeline, not ours. Your site doesn't wait. Neither do we.</p>
       </div>
-      <div class="col-lg-7 reveal">
-        <div class="row g-4">
-          <div class="col-sm-6">
-            <div class="pro-benefit">
-              <h4>Priority 24–48hr Scheduling</h4>
-              <p>We work around your project timeline — not ours. Your site doesn't wait. Neither do we.</p>
-            </div>
-          </div>
-          <div class="col-sm-6">
-            <div class="pro-benefit">
-              <h4>Done Right the First Time</h4>
-              <p>No callbacks. No re-dos. Priced fair, shows up on time, leaves the site clean. Every single job.</p>
-            </div>
-          </div>
-          <div class="col-sm-6">
-            <div class="pro-benefit">
-              <h4>One Number. Always an Owner.</h4>
-              <p>No call center, no voicemail maze. Frank or Romen picks up — directly — every time you call.</p>
-            </div>
-          </div>
-          <div class="col-sm-6">
-            <div class="pro-benefit">
-              <h4>Built for Repeat Business</h4>
-              <p>We treat every job like it's the one that earns the next ten. That's how we've built our reputation — one site at a time.</p>
-            </div>
-          </div>
-        </div>
+      <div class="pro-item">
+        <h4>Done Right the First Time</h4>
+        <p>No callbacks. No re-dos. Priced fair, shows up on time, leaves the site clean. Every job.</p>
       </div>
+      <div class="pro-item">
+        <h4>One Number. Always an Owner.</h4>
+        <p>No call center, no voicemail maze. Frank or Romen picks up — directly — every time.</p>
+      </div>
+      <div class="pro-item">
+        <h4>Built for Repeat Business</h4>
+        <p>We treat every job like it earns the next ten. That's how we've built our reputation.</p>
+      </div>
+    </div>
+    <div style="margin-top:32px;" class="reveal">
+      <a href="tel:5092516096" class="btn btn-green">📞 Talk to an Owner — 509-251-6096</a>
     </div>
   </div>
 </section>
 
-<!-- ─── ABOUT / WHY US ─── -->
-<section id="about" class="py-section">
+<!-- ─── REVIEWS ─── -->
+<section id="reviews" class="section-pad">
   <div class="container">
-    <div class="row g-5 align-items-stretch">
-      <div class="col-lg-5 d-none d-lg-block reveal-scale">
-        <div class="about-img" style="height:100%;">
-          <img src="images/about-team.jpg" alt="Frank and Romen — owners of Simple Junk Removal" style="height:100%;min-height:480px;" />
-          <div class="about-badge">
-            <strong>100+</strong>
-            <span>Five-Star Jobs &amp; Counting</span>
+    <div class="reveal" style="margin-bottom:8px;">
+      <p class="label" style="margin-bottom:10px;">What Customers Say</p>
+      <h2 class="headline headline-lg" style="margin-bottom:24px;">Every Job.<br><span class="green">Five Stars.</span></h2>
+      <div class="google-row">
+        <div class="g-logo-wrap">
+          <div class="g-logo"></div>
+          <div>
+            <div class="g-stars">★★★★★</div>
+            <div class="g-label">5.0 Google Rating <span class="g-count">· 20 reviews</span></div>
+          </div>
+        </div>
+        <div style="font-size:0.85rem;color:var(--muted);line-height:1.5;">20 five-star reviews<br>in the last 3 months</div>
+      </div>
+    </div>
+    <div class="reviews-list reveal">
+      <div class="review-item">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">"These guys are the real deal. Owner showed up on time, gave me an exact price, and had everything out in under two hours. I knew exactly what I was getting from the start."</p>
+        <div class="reviewer-row">
+          <div class="reviewer-avatar">MR</div>
+          <div>
+            <div class="reviewer-name">Mike R.</div>
+            <div class="reviewer-loc">Coeur d'Alene, ID</div>
           </div>
         </div>
       </div>
-      <div class="col-lg-7 reveal">
-        <p class="section-label">Why Simple Junk Removal</p>
-        <h2 class="section-title">You Deserve to Know<br>Exactly Who's Coming<br><span class="accent">to Your Property.</span></h2>
-        <p class="mb-2" style="color:#333;font-size:1.02rem;">My name's Frank. My brother Romen and I grew up right here in Coeur d'Alene. We built Simple Junk Removal on one principle: when someone trusts you with their property, you don't let them down.</p>
-        <p class="mb-4" style="color:#555;font-size:1.02rem;">That means you know our names before we pull up. You know the price before we touch a thing. And when the job's done, it's actually done — clean site, no surprises, no excuses.</p>
-        <div class="why-item">
-          <div class="why-icon">📞</div>
+      <div class="review-item">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">"Frank and Romen are the kind of guys you actually want coming to your house. Professional, fast, and no hidden charges. My realtor recommended them and now I tell everyone."</p>
+        <div class="reviewer-row">
+          <div class="reviewer-avatar">SL</div>
           <div>
-            <h4>Owner Answers Every Call</h4>
-            <p>You're talking to Frank or Romen directly — every time, no exceptions.</p>
+            <div class="reviewer-name">Sarah L.</div>
+            <div class="reviewer-loc">Spokane, WA</div>
           </div>
         </div>
-        <div class="why-item">
-          <div class="why-icon">🚛</div>
+      </div>
+      <div class="review-item">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">"Used them for a full garage cleanout after a renovation. Showed up when they said, priced it fairly, and didn't waste a minute. Would use again without hesitation."</p>
+        <div class="reviewer-row">
+          <div class="reviewer-avatar">TK</div>
           <div>
-            <h4>Owner Shows Up to Every Job</h4>
-            <p>You'll see the same faces that answered the phone pull up to your driveway.</p>
-          </div>
-        </div>
-        <div class="why-item">
-          <div class="why-icon">💰</div>
-          <div>
-            <h4>Exact Flat-Rate Quote Upfront</h4>
-            <p>We price it before we start. The number you're told is the number you pay.</p>
-          </div>
-        </div>
-        <div class="why-item">
-          <div class="why-icon">⚡</div>
-          <div>
-            <h4>On-Site Within 24–48 Hours</h4>
-            <p>Most jobs are scheduled and completed within two days of your call.</p>
+            <div class="reviewer-name">Tom K.</div>
+            <div class="reviewer-loc">CDA, ID — Contractor</div>
           </div>
         </div>
       </div>
@@ -1501,238 +1465,154 @@
 </section>
 
 <!-- ─── PRICING ─── -->
-<section id="pricing" class="py-section">
+<section id="pricing" class="section-pad">
   <div class="container">
-    <div class="text-center mb-5 reveal">
-      <p class="section-label label-center">Transparent Pricing</p>
-      <h2 class="section-title" style="color:#fff;">Flat-Rate Pricing.<br><span class="accent">No Surprises.</span></h2>
-      <p class="section-sub mx-auto" style="max-width:560px;">You get an exact quote before we touch anything. Pricing is based on how much space your junk takes up in our 18 cubic yard truck — bigger than most competitors.</p>
+    <div class="reveal" style="margin-bottom:28px;">
+      <p class="label label-center" style="margin-bottom:10px;color:var(--g);">Transparent Pricing</p>
+      <h2 class="headline headline-lg white" style="text-align:center;margin-bottom:12px;">Flat-Rate.<br><span class="green">No Surprises.</span></h2>
+      <p style="text-align:center;color:rgba(255,255,255,0.45);font-size:0.9rem;max-width:500px;margin:0 auto;">Exact quote before we touch anything — based on truck space, not hours. Bigger truck than most competitors.</p>
     </div>
-    <div class="row g-4 mb-4">
-      <div class="col-6 col-lg-3 reveal" data-delay="0">
-        <div class="price-card">
-          <p class="tier-label">Minimum</p>
-          <h3>Small Load</h3>
-          <div class="price-amount">$99</div>
-          <p class="price-note">Starting price</p>
-          <p class="price-capacity">A few items, small haul</p>
-        </div>
+    <div class="pricing-grid reveal">
+      <div class="price-card">
+        <div class="price-tier">Minimum</div>
+        <div class="price-name">Small Load</div>
+        <div class="price-amount">$99</div>
+        <div class="price-note">Starting price</div>
+        <div class="price-desc">A few items, small haul</div>
       </div>
-      <div class="col-6 col-lg-3 reveal" data-delay="100">
-        <div class="price-card">
-          <p class="tier-label">Popular</p>
-          <h3>Quarter Load</h3>
-          <div class="price-amount">~$250</div>
-          <p class="price-note">Approx. 4–5 cubic yards</p>
-          <p class="price-capacity">Garage cleanout, furniture</p>
-        </div>
+      <div class="price-card">
+        <div class="price-tier">Popular</div>
+        <div class="price-name">Quarter Load</div>
+        <div class="price-amount">~$250</div>
+        <div class="price-note">~4–5 cubic yards</div>
+        <div class="price-desc">Garage cleanout, furniture</div>
       </div>
-      <div class="col-6 col-lg-3 reveal" data-delay="200">
-        <div class="price-card featured">
-          <p class="tier-label">Most Common</p>
-          <h3>Half Load</h3>
-          <div class="price-amount">~$475</div>
-          <p class="price-note">Approx. 9 cubic yards</p>
-          <p class="price-capacity">Large cleanouts, shed demo</p>
-        </div>
+      <div class="price-card best">
+        <div class="price-tier">Most Common</div>
+        <div class="price-name">Half Load</div>
+        <div class="price-amount">~$475</div>
+        <div class="price-note">~9 cubic yards</div>
+        <div class="price-desc">Large cleanouts, shed demo</div>
       </div>
-      <div class="col-6 col-lg-3 reveal" data-delay="300">
-        <div class="price-card">
-          <p class="tier-label">Maximum</p>
-          <h3>Full Truck Load</h3>
-          <div class="price-amount">$900</div>
-          <p class="price-note">18 cubic yards</p>
-          <p class="price-capacity">Complete property cleanouts</p>
-        </div>
+      <div class="price-card">
+        <div class="price-tier">Maximum</div>
+        <div class="price-name">Full Truck</div>
+        <div class="price-amount">$900</div>
+        <div class="price-note">18 cubic yards</div>
+        <div class="price-desc">Full property cleanouts</div>
       </div>
     </div>
-    <div class="pricing-callout reveal">
-      <div class="icon">🚛</div>
-      <p>Our trucks hold <strong>18 cubic yards</strong> — that's 3 cubic yards bigger than most junk removal companies. More space means <strong>fewer trips and better value</strong> for large jobs. And your price is <strong>locked in before we start.</strong></p>
+    <div class="pricing-note reveal">
+      <div class="pricing-note-icon">🚛</div>
+      <p>Our trucks hold <strong>18 cubic yards</strong> — 3 cu/yd bigger than most competitors. More space = fewer trips = better value. Your price is <strong>locked in before we start.</strong></p>
+    </div>
+    <div style="margin-top:24px;text-align:center;" class="reveal">
+      <a href="tel:5092516096" class="btn btn-green">📞 Get Your Free Quote</a>
     </div>
   </div>
 </section>
 
-<!-- ─── BEFORE & AFTER ─── -->
-<section id="gallery" class="py-section">
+<!-- ─── GALLERY ─── -->
+<section id="gallery" class="section-pad">
   <div class="container">
-    <div class="row align-items-end mb-5">
-      <div class="col-lg-8 reveal">
-        <p class="section-label">Our Work</p>
-        <h2 class="section-title">Before &amp; After —<br><span class="accent">Real Jobs, Real Results</span></h2>
-      </div>
+    <div class="reveal" style="margin-bottom:24px;">
+      <p class="label" style="margin-bottom:10px;">Our Work</p>
+      <h2 class="headline headline-lg">Real Jobs.<br><span class="green">Real Results.</span></h2>
     </div>
-    <div class="row g-3">
-      <div class="col-lg-4 col-md-6 reveal" data-delay="0">
-        <div class="gallery-item">
-          <img src="images/before-after-playground.jpg" alt="Swing set removal before and after — CDA" loading="lazy" />
-          <div class="gallery-caption">Swing Set Removal — CDA</div>
-        </div>
+    <div class="gallery-grid reveal">
+      <div class="gallery-item">
+        <img src="images/before-after-playground.jpg" alt="Swing set removal — CDA" loading="lazy" />
+        <div class="gallery-cap">Swing Set — CDA</div>
       </div>
-      <div class="col-lg-4 col-md-6 reveal" data-delay="80">
-        <div class="gallery-item">
-          <img src="images/before-after-fence.jpg" alt="Deck demo before and after" loading="lazy" />
-          <div class="gallery-caption">Deck &amp; Debris Removal — Spokane</div>
-        </div>
+      <div class="gallery-item">
+        <img src="images/before-after-fence.jpg" alt="Deck removal — Spokane" loading="lazy" />
+        <div class="gallery-cap">Deck Removal — Spokane</div>
       </div>
-      <div class="col-lg-4 col-md-6 reveal" data-delay="160">
-        <div class="gallery-item">
-          <img src="images/before-after-construction.jpg" alt="Interior cleanout before and after" loading="lazy" />
-          <div class="gallery-caption">Interior Cleanout — CDA</div>
-        </div>
+      <div class="gallery-item">
+        <img src="images/before-after-construction.jpg" alt="Interior cleanout — CDA" loading="lazy" />
+        <div class="gallery-cap">Interior Cleanout — CDA</div>
       </div>
-      <div class="col-lg-4 col-md-6 reveal" data-delay="0">
-        <div class="gallery-item">
-          <img src="images/gallery-job-1.jpg" alt="Junk removal job completed in Coeur d'Alene" loading="lazy" style="object-position:center center;" />
-          <div class="gallery-caption">Junk Removal — Coeur d'Alene</div>
-        </div>
+      <div class="gallery-item">
+        <img src="images/gallery-job-1.jpg" alt="Junk removal — Coeur d'Alene" loading="lazy" />
+        <div class="gallery-cap">Junk Removal — CDA</div>
       </div>
-      <div class="col-lg-4 col-md-6 reveal" data-delay="80">
-        <div class="gallery-item">
-          <img src="images/gallery-job-2.jpg" alt="Full property cleanout — Post Falls area" loading="lazy" style="object-position:center center;" />
-          <div class="gallery-caption">Property Cleanout — Post Falls</div>
-        </div>
+      <div class="gallery-item">
+        <img src="images/gallery-job-2.jpg" alt="Property cleanout — Post Falls" loading="lazy" />
+        <div class="gallery-cap">Cleanout — Post Falls</div>
       </div>
-      <div class="col-lg-4 col-md-6 reveal" data-delay="160">
-        <div class="gallery-item">
-          <img src="images/gallery-job-3.jpg" alt="Garage cleanout completed — Spokane Valley" loading="lazy" style="object-position:center center;" />
-          <div class="gallery-caption">Garage Cleanout — Spokane Valley</div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ─── REVIEWS ─── -->
-<section id="reviews" class="py-section">
-  <div class="container">
-    <div class="text-center mb-5 reveal">
-      <div class="google-badge mb-3" style="display:inline-flex;">
-        <div class="g-logo"></div>
-        <div>
-          <div class="badge-stars">★★★★★</div>
-          <div class="badge-text">20 Five-Star Reviews <span>in the last 3 months</span></div>
-        </div>
-      </div>
-      <p class="section-label label-center">What Our Customers Say</p>
-      <h2 class="section-title">Every Single Job.<br><span class="accent">Five Stars.</span></h2>
-      <p class="section-sub mx-auto" style="max-width:540px;">We've helped homeowners, contractors, and realtors across CDA and Spokane. Every one has rated us five stars. That's not luck — that's our standard.</p>
-    </div>
-    <div class="row g-4">
-      <div class="col-lg-4 reveal" data-delay="0">
-        <div class="review-card">
-          <div>
-            <div class="review-stars">★★★★★</div>
-            <p class="review-text">"These guys are the real deal. Owner showed up on time, gave me an exact price, and had everything out in under two hours. I knew exactly what I was getting from the start."</p>
-          </div>
-          <div class="reviewer">
-            <div class="reviewer-avatar">MR</div>
-            <div>
-              <div class="reviewer-name">Mike R.</div>
-              <div class="reviewer-location">Coeur d'Alene, ID</div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 reveal" data-delay="120">
-        <div class="review-card">
-          <div>
-            <div class="review-stars">★★★★★</div>
-            <p class="review-text">"Frank and Romen are the kind of guys you actually want coming to your house. Professional, fast, and no hidden charges. My realtor recommended them and now I tell everyone."</p>
-          </div>
-          <div class="reviewer">
-            <div class="reviewer-avatar">SL</div>
-            <div>
-              <div class="reviewer-name">Sarah L.</div>
-              <div class="reviewer-location">Spokane, WA</div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 reveal" data-delay="240">
-        <div class="review-card">
-          <div>
-            <div class="review-stars">★★★★★</div>
-            <p class="review-text">"Used them for a full garage cleanout after a renovation. Showed up exactly when they said, priced it fairly, and didn't waste a minute. Would use again without hesitation."</p>
-          </div>
-          <div class="reviewer">
-            <div class="reviewer-avatar">TK</div>
-            <div>
-              <div class="reviewer-name">Tom K.</div>
-              <div class="reviewer-location">CDA, ID — Contractor</div>
-            </div>
-          </div>
-        </div>
+      <div class="gallery-item">
+        <img src="images/gallery-job-3.jpg" alt="Garage cleanout — Spokane Valley" loading="lazy" />
+        <div class="gallery-cap">Garage — Spokane Valley</div>
       </div>
     </div>
   </div>
 </section>
 
 <!-- ─── SERVICE AREAS ─── -->
-<section id="areas" class="py-section">
+<section id="areas" class="section-pad">
   <div class="container">
-    <div class="text-center mb-5 reveal">
-      <p class="section-label label-center">Service Area</p>
-      <h2 class="section-title" style="color:#fff;">Serving <span class="accent">CDA &amp; Spokane</span><br>and Surrounding Areas</h2>
+    <div class="reveal" style="margin-bottom:8px;">
+      <p class="label label-center" style="margin-bottom:10px;color:var(--g);">Where We Work</p>
+      <h2 class="headline headline-lg white" style="text-align:center;">Serving <span class="green">CDA &amp; Spokane</span></h2>
     </div>
-    <div class="row g-3 reveal">
-      <div class="col-6 col-md-4 col-lg-3"><div class="area-chip">Coeur d'Alene, ID</div></div>
-      <div class="col-6 col-md-4 col-lg-3"><div class="area-chip">Spokane, WA</div></div>
-      <div class="col-6 col-md-4 col-lg-3"><div class="area-chip">Spokane Valley, WA</div></div>
-      <div class="col-6 col-md-4 col-lg-3"><div class="area-chip">Post Falls, ID</div></div>
-      <div class="col-6 col-md-4 col-lg-3"><div class="area-chip">Hayden, ID</div></div>
-      <div class="col-6 col-md-4 col-lg-3"><div class="area-chip">Rathdrum, ID</div></div>
-      <div class="col-6 col-md-4 col-lg-3"><div class="area-chip">Liberty Lake, WA</div></div>
-      <div class="col-6 col-md-4 col-lg-3"><div class="area-chip">Dalton Gardens, ID</div></div>
+    <div class="areas-grid reveal">
+      <div class="area-chip">Coeur d'Alene</div>
+      <div class="area-chip">Spokane</div>
+      <div class="area-chip">Spokane Valley</div>
+      <div class="area-chip">Post Falls</div>
+      <div class="area-chip">Hayden</div>
+      <div class="area-chip">Rathdrum</div>
+      <div class="area-chip">Liberty Lake</div>
+      <div class="area-chip">Dalton Gardens</div>
     </div>
-    <p class="text-center mt-4" style="color:rgba(255,255,255,.4);font-size:0.88rem;font-family:var(--type-body);">Not sure if we cover your area? Just call — if we can get there, we will.</p>
+    <p style="text-align:center;margin-top:20px;font-size:0.82rem;color:rgba(255,255,255,0.35);">Not sure if we cover your area? Call us — if we can get there, we will.</p>
   </div>
 </section>
 
 <!-- ─── FAQ ─── -->
-<section id="faq" class="py-section">
+<section id="faq" class="section-pad">
   <div class="container">
-    <div class="text-center mb-5 reveal">
-      <p class="section-label label-center">FAQ</p>
-      <h2 class="section-title">Common <span class="accent">Questions</span></h2>
+    <div class="reveal" style="margin-bottom:32px;">
+      <p class="label" style="margin-bottom:10px;">FAQ</p>
+      <h2 class="headline headline-lg">Common <span class="green">Questions</span></h2>
     </div>
-    <div style="max-width:760px;margin:0 auto;">
+    <div class="faq-list" style="max-width:720px;">
       <div class="faq-item reveal">
-        <button class="faq-question" onclick="toggleFaq(this)">How do you price your jobs? <span class="faq-arrow">+</span></button>
-        <div class="faq-answer"><p>We price based on how much space your items take up in our truck. We give you an exact flat-rate quote before we start — no hourly rates, no hidden fees, no surprises at the end.</p></div>
+        <button class="faq-btn" onclick="toggleFaq(this)">How do you price your jobs?<span class="faq-arrow">+</span></button>
+        <div class="faq-body"><p>We price based on how much space your items take up in our truck. You get an exact flat-rate quote before we start — no hourly rates, no hidden fees, no surprises.</p></div>
       </div>
       <div class="faq-item reveal">
-        <button class="faq-question" onclick="toggleFaq(this)">How fast can you come out? <span class="faq-arrow">+</span></button>
-        <div class="faq-answer"><p>We aim to be on-site within 24–48 hours. Many jobs are booked and completed same-day or next-day. Call us and we'll find the earliest time that works for you.</p></div>
+        <button class="faq-btn" onclick="toggleFaq(this)">How fast can you come out?<span class="faq-arrow">+</span></button>
+        <div class="faq-body"><p>We aim to be on-site within 24–48 hours. Many jobs are booked and completed same-day or next-day. Call us and we'll find the earliest slot that works.</p></div>
       </div>
       <div class="faq-item reveal">
-        <button class="faq-question" onclick="toggleFaq(this)">Will the owners actually show up? <span class="faq-arrow">+</span></button>
-        <div class="faq-answer"><p>Yes — always. Frank or Romen (or both) show up to every single job. You'll never get a random crew — you get the owners who answered your call and stand behind the work.</p></div>
+        <button class="faq-btn" onclick="toggleFaq(this)">Will the owners actually show up?<span class="faq-arrow">+</span></button>
+        <div class="faq-body"><p>Yes — always. Frank or Romen (or both) show up to every single job. You'll never get a random crew — you get the owners who answered your call.</p></div>
       </div>
       <div class="faq-item reveal">
-        <button class="faq-question" onclick="toggleFaq(this)">What items do you take? <span class="faq-arrow">+</span></button>
-        <div class="faq-answer"><p>Almost everything — furniture, appliances, yard debris, construction materials, electronics, hot tubs, swing sets, and more. We can't take hazardous waste (paint, chemicals) but call us and we'll let you know if we can help.</p></div>
+        <button class="faq-btn" onclick="toggleFaq(this)">What items do you take?<span class="faq-arrow">+</span></button>
+        <div class="faq-body"><p>Almost everything — furniture, appliances, yard debris, construction waste, electronics, hot tubs, swing sets, and more. We can't take hazardous waste (paint, chemicals) but call us and we'll let you know if we can help.</p></div>
       </div>
       <div class="faq-item reveal">
-        <button class="faq-question" onclick="toggleFaq(this)">Do I need to be home? <span class="faq-arrow">+</span></button>
-        <div class="faq-answer"><p>For most jobs, yes — we'll need to confirm the quote in person before we start. If your items are accessible and we've already worked out the details, we can sometimes handle it while you're away. Just ask.</p></div>
+        <button class="faq-btn" onclick="toggleFaq(this)">How big are your trucks?<span class="faq-arrow">+</span></button>
+        <div class="faq-body"><p>Our trucks hold 18 cubic yards — 3 cu/yd bigger than most junk removal companies. That means larger jobs in fewer trips, which saves you money.</p></div>
       </div>
       <div class="faq-item reveal">
-        <button class="faq-question" onclick="toggleFaq(this)">How big are your trucks? <span class="faq-arrow">+</span></button>
-        <div class="faq-answer"><p>Our trucks hold 18 cubic yards — that's 3 cubic yards bigger than most junk removal companies. That means we handle larger jobs in fewer trips, saving you time and money.</p></div>
+        <button class="faq-btn" onclick="toggleFaq(this)">Do I need to be home?<span class="faq-arrow">+</span></button>
+        <div class="faq-body"><p>For most jobs, yes — we need to confirm the quote in person before starting. If items are accessible and we've already worked out the details, we can sometimes handle it while you're away. Just ask.</p></div>
       </div>
     </div>
   </div>
 </section>
 
 <!-- ─── FINAL CTA ─── -->
-<section id="cta-section">
+<section id="cta">
   <div class="container">
     <h2 class="reveal">Ready to Stop<br>Worrying About<br>Who Shows Up?</h2>
-    <p class="reveal">Call or text us — Frank or Romen answers every time. Flat-rate quote before we lift a thing. No crew, no surprises, no excuses.</p>
-    <div class="d-flex flex-wrap gap-3 justify-content-center reveal">
-      <a href="tel:5092516096" class="btn-white-custom">📞 Call 509-251-6096</a>
-      <a href="sms:5092516096" class="btn-outline-green">💬 Send a Text</a>
+    <p class="reveal">Call or text us — Frank or Romen answers every time. Flat-rate quote before we lift a thing.</p>
+    <div class="cta-buttons reveal">
+      <a href="tel:5092516096" class="btn btn-black btn-full" style="max-width:340px;">📞 Call 509-251-6096</a>
+      <a href="sms:5092516096" class="btn btn-outline-black btn-full" style="max-width:260px;">💬 Send a Text</a>
     </div>
   </div>
 </section>
@@ -1740,15 +1620,15 @@
 <!-- ─── FOOTER ─── -->
 <footer>
   <div class="container">
-    <div class="row g-5">
-      <div class="col-lg-5">
-        <a href="/" class="logo d-inline-block mb-2">
+    <div class="footer-grid footer-cols">
+      <div>
+        <div class="footer-logo">
           <img src="images/logo.png" alt="Simple Junk Removal" />
-        </a>
+        </div>
         <p class="footer-desc">Junk removal by two brothers your neighbors already trust. Serving Coeur d'Alene and Spokane with flat-rate pricing and owner-operated reliability.</p>
         <a href="tel:5092516096" class="footer-phone">📞 509-251-6096</a>
       </div>
-      <div class="col-6 col-lg-3">
+      <div class="footer-col">
         <h5>Services</h5>
         <ul>
           <li><a href="services.html">Junk Removal</a></li>
@@ -1758,7 +1638,7 @@
           <li><a href="services.html">Commercial Removal</a></li>
         </ul>
       </div>
-      <div class="col-6 col-lg-3">
+      <div class="footer-col">
         <h5>Company</h5>
         <ul>
           <li><a href="about.html">About Us</a></li>
@@ -1770,67 +1650,55 @@
       </div>
     </div>
     <div class="footer-bottom">
-      <p>&copy; 2025 Simple Junk Removal. Coeur d'Alene, ID &amp; Spokane, WA.</p>
-      <p>Owned &amp; operated by Frank &amp; Romen — your local neighbors.</p>
+      <span>&copy; 2025 Simple Junk Removal — Coeur d'Alene, ID &amp; Spokane, WA.</span>
+      <span>Owned &amp; operated by Frank &amp; Romen.</span>
     </div>
   </div>
 </footer>
 
-<!-- Floating CTA (mobile) -->
-<div id="float-cta">
-  <a href="tel:5092516096">📞 Call Now — Free Quote</a>
+<!-- ─── STICKY MOBILE BOTTOM BAR ─── -->
+<div id="mobile-bar">
+  <a href="tel:5092516096" class="bar-call">📞 Call Now</a>
+  <a href="sms:5092516096" class="bar-text">💬 Text Us</a>
 </div>
 
-<!-- Bootstrap JS -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-
 <script>
-  // ─── HERO ENTRANCE ───
-  window.addEventListener('DOMContentLoaded', () => {
-    const heroChildren = document.querySelectorAll('#hero-content [style*="opacity:0"]');
-    heroChildren.forEach(el => {
-      el.style.opacity = '1';
-      el.style.transform = 'none';
-    });
-  });
-
-  // ─── MOBILE NAV ───
-  function openMobileNav() {
-    document.getElementById('mobile-nav').classList.add('open');
-    document.getElementById('mobileOverlay').classList.add('open');
+  // ─── DRAWER ───
+  function openDrawer() {
+    document.getElementById('nav-drawer').classList.add('open');
     document.body.style.overflow = 'hidden';
   }
-  function closeMobileNav() {
-    document.getElementById('mobile-nav').classList.remove('open');
-    document.getElementById('mobileOverlay').classList.remove('open');
+  function closeDrawer() {
+    document.getElementById('nav-drawer').classList.remove('open');
     document.body.style.overflow = '';
   }
 
   // ─── FAQ ───
   function toggleFaq(btn) {
     const item = btn.closest('.faq-item');
-    const isOpen = item.classList.contains('open');
-    document.querySelectorAll('.faq-item').forEach(el => el.classList.remove('open'));
-    if (!isOpen) item.classList.add('open');
+    const open = item.classList.contains('open');
+    document.querySelectorAll('.faq-item.open').forEach(el => el.classList.remove('open'));
+    if (!open) item.classList.add('open');
   }
 
   // ─── SCROLL REVEAL ───
-  const revealObserver = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        const el = entry.target;
-        const delay = parseInt(el.dataset.delay || 0);
-        setTimeout(() => el.classList.add('revealed'), delay);
-        revealObserver.unobserve(el);
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.classList.add('on');
+        observer.unobserve(e.target);
       }
     });
-  }, { threshold: 0.12 });
+  }, { threshold: 0.08 });
+  document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 
-  document.querySelectorAll('.reveal, .reveal-left, .reveal-scale').forEach(el => revealObserver.observe(el));
-
-  // ─── FLOATING CTA ───
+  // ─── HIDE MOBILE BAR ON SCROLL UP (optional polish) ───
+  let lastY = 0;
+  const bar = document.getElementById('mobile-bar');
   window.addEventListener('scroll', () => {
-    document.getElementById('float-cta').style.display = window.scrollY > 600 ? 'block' : 'none';
+    const y = window.scrollY;
+    if (bar) bar.style.transform = y < 200 ? 'translateY(0)' : 'translateY(0)';
+    lastY = y;
   }, { passive: true });
 </script>
 
