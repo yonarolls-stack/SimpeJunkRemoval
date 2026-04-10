@@ -72,7 +72,10 @@
     /* ─────────────────────────────────────────
        UTILITY
     ───────────────────────────────────────── */
-    .container { width: 100%; max-width: 1180px; margin: 0 auto; padding: 0 20px; }
+    .container { width: 100%; max-width: 1180px; margin: 0 auto; padding: 0 24px; }
+    @media (min-width: 480px) { .container { padding: 0 28px; } }
+    @media (min-width: 768px) { .container { padding: 0 32px; } }
+    @media (min-width: 1200px) { .container { padding: 0 40px; } }
     .section-pad { padding: 72px 0; }
     .section-pad-lg { padding: 100px 0; }
 
