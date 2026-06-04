@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Privacy Policy | Simple Junk Removal | Coeur d'Alene & Spokane</title>
+  <meta name="description" content="Privacy Policy for Simple Junk Removal. Learn how we collect, use, and protect your information including SMS messaging consent." />
+  <link rel="canonical" href="https://simplejunkremoval.com/privacy-policy" />
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800;900&family=DM+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --green: #3dbe5c;
+      --green-dark: #2fa04d;
+      --black: #000000;
+      --body-text: #1a1a1a;
+      --gray-text: #777;
+      --light-bg: #f2f2f2;
+      --card-radius: 4px; --cream: #f5f0e8; --type-display: 'Barlow Condensed', sans-serif; --type-body: 'DM Sans', sans-serif; --ease-reveal: cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    * { box-sizing: border-box; }
+    body { font-family: 'DM Sans', sans-serif; font-size: 1.05rem; line-height: 1.7; color: var(--body-text); background: #fff; }
+    a { text-decoration: none; color: inherit; }
+    img { max-width: 100%; height: auto; display: block; }
+
+    @keyframes pulse-green {
+      0%   { box-shadow: 0 0 0 0 rgba(61,190,92,0.55); }
+      70%  { box-shadow: 0 0 0 12px rgba(61,190,92,0); }
+      100% { box-shadow: 0 0 0 0 rgba(61,190,92,0); }
+    }
+    .btn-primary-custom {
+      display: inline-flex; align-items: center; justify-content: center;
+      background: var(--green); color: #000; border: 3px solid #000; border-radius: 10px;
+      min-width: 200px; min-height: 60px; font-family: 'DM Sans', sans-serif;
+      font-size: 1.1rem; font-weight: 700; letter-spacing: -0.03em; padding: 0 2rem;
+      transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, transform .15s ease;
+      cursor: pointer; animation: pulse-green 2.2s ease-in-out infinite;
+    }
+    .btn-primary-custom:hover { background: #000; color: var(--green); border-color: #000; transform: translateY(-2px); animation: none; box-shadow: 0 8px 20px rgba(0,0,0,0.25); }
+    .header-cta { display:inline-flex; align-items:center; gap:8px; background:var(--green); color:#000; border:2px solid var(--green); border-radius:8px; padding:10px 22px; font-weight:700; font-size:0.95rem; white-space:nowrap; transition:background .15s,color .15s; }
+    .header-cta:hover { background:transparent; color:var(--green); }
+
+    /* HEADER */
+    #site-header { position: sticky; top: 0; z-index: 999; background: #000; padding: 14px 0; }
+    #site-header .logo img { height: 56px; width: auto; display: block; }
+    #primary-menu { list-style: none; margin: 0; padding: 0; display: flex; gap: 28px; align-items: center; }
+    #primary-menu a { color: #fff; font-weight: 600; font-size: 0.95rem; transition: color .15s; }
+    #primary-menu a:hover, #primary-menu a.active { color: var(--green); }
+    .menu-toggle { display: none; background: none; border: none; cursor: pointer; padding: 4px; }
+    .menu-toggle span { display: block; width: 26px; height: 3px; background: #fff; margin: 5px 0; border-radius: 2px; }
+    #mobile-nav { position: fixed; top: 0; right: -220px; width: 200px; height: 100vh; background: rgba(0,0,0,.92); z-index: 9999; display: flex; flex-direction: column; padding: 80px 24px 40px; gap: 24px; transition: right .2s ease; }
+    #mobile-nav.open { right: 0; }
+    #mobile-nav a { color: #fff; font-size: 1rem; font-weight: 600; transition: color .15s; }
+    #mobile-nav a:hover { color: var(--green); }
+    #mobile-nav-close { position: absolute; top: 20px; right: 20px; background: none; border: none; color: #fff; font-size: 1.5rem; cursor: pointer; }
+    .mobile-overlay { display: none; position: fixed; inset: 0; background: rgba(0,0,0,.5); z-index: 9998; }
+    .mobile-overlay.open { display: block; }
+
+    /* PAGE HERO */
+    .page-hero {
+      background: #000;
+      position: relative;
+      padding: 80px 0 64px;
+      text-align: center;
+    }
+    .page-hero .inner { position: relative; z-index: 2; }
+    .page-hero .section-label { color: var(--green); font-size: 0.8rem; font-weight: 700; letter-spacing: 2.5px; text-transform: uppercase; margin-bottom: 12px; }
+    .page-hero h1 { font-family: 'Barlow Condensed', sans-serif; font-size: clamp(2.8rem, 7vw, 5rem); font-weight: 900; color: #fff; line-height: 0.95; text-transform: uppercase; letter-spacing: -0.01em; margin-bottom: 16px; }
+    .page-hero h1 span { color: var(--green); }
+    .page-hero p { font-size: 1rem; color: rgba(255,255,255,.6); max-width: 480px; margin: 0 auto; }
+
+    /* SECTION HELPERS */
+    .section-label { font-family: 'Barlow Condensed', sans-serif; font-size: 0.8rem; font-weight: 800; letter-spacing: 0.2em; text-transform: uppercase; color: var(--green); margin-bottom: 12px; }
+    .py-section { padding: 80px 0; }
+
+    /* POLICY CONTENT */
+    .policy-wrap { max-width: 780px; margin: 0 auto; padding: 64px 0 80px; }
+    .policy-wrap h2 {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 1.7rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: -0.01em;
+      margin-top: 2.5rem;
+      margin-bottom: .75rem;
+      padding-top: 2rem;
+      border-top: 1px solid #eee;
+    }
+    .policy-wrap h2:first-of-type { border-top: none; padding-top: 0; margin-top: 0; }
+    .policy-wrap p { color: #444; margin-bottom: 1rem; }
+    .policy-wrap ul { padding-left: 1.4rem; color: #444; margin-bottom: 1rem; }
+    .policy-wrap ul li { margin-bottom: .4rem; }
+    .policy-wrap .highlight-box {
+      background: #f5f5f5;
+      border-left: 4px solid var(--green);
+      padding: 1.25rem 1.5rem;
+      border-radius: 0 var(--card-radius) var(--card-radius) 0;
+      margin: 1.5rem 0;
+    }
+    .policy-wrap .highlight-box p { margin: 0; font-size: 0.95rem; color: #333; }
+    .policy-wrap .updated { font-size: 0.85rem; color: var(--gray-text); margin-bottom: 2rem; }
+    .policy-wrap a { color: var(--green); text-decoration: underline; }
+
+    /* FOOTER */
+    footer { background: #000; color: #fff; padding: 56px 0 28px; border-top: 1px solid #111; }
+    footer .logo img { height: 48px; margin-bottom: 1rem; }
+    footer p.footer-desc { color: rgba(255,255,255,.5); font-size: 0.9rem; line-height: 1.7; max-width: 280px; }
+    footer .footer-phone { display: block; font-size: 1.4rem; font-weight: 700; color: var(--green); margin-top: 1rem; }
+    footer h5 { font-size: 0.75rem; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: var(--green); margin-bottom: 1rem; }
+    footer ul { list-style: none; padding: 0; margin: 0; }
+    footer ul li { margin-bottom: .5rem; }
+    footer ul li a { color: rgba(255,255,255,.55); font-size: 0.9rem; transition: color .15s; }
+    footer ul li a:hover { color: var(--green); }
+    .footer-bottom { border-top: 1px solid #1a1a1a; padding-top: 20px; margin-top: 48px; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 8px; }
+    .footer-bottom p { color: rgba(255,255,255,.3); font-size: 0.78rem; margin: 0; }
+
+    @media (max-width: 991px) {
+      #primary-menu { display: none; }
+      .menu-toggle { display: block; }
+    }
+    @media (max-width: 767px) {
+      body { font-size: 1rem; }
+      #site-header { padding: 10px 0; }
+      #site-header .logo img { height: 42px; }
+      .page-hero { padding: 60px 0 44px; }
+      .page-hero h1 { font-size: clamp(2.2rem, 9vw, 3.5rem); }
+      .policy-wrap { padding: 40px 0 60px; }
+      .policy-wrap h2 { font-size: 1.4rem; }
+    }
+  </style>
+</head>
+<body>
+
+<div class="mobile-overlay" id="mobileOverlay" onclick="closeMobileNav()"></div>
+<nav id="mobile-nav">
+  <button id="mobile-nav-close" onclick="closeMobileNav()">✕</button>
+  <a href="services.html" onclick="closeMobileNav()">Services</a>
+  <a href="demo.html" onclick="closeMobileNav()">Demo &amp; Teardown</a>
+  <a href="trucks.html" onclick="closeMobileNav()">Our Trucks</a>
+  <a href="about.html" onclick="closeMobileNav()">About Us</a>
+  <a href="tel:5092516096" class="btn-primary-custom mt-3" style="min-width:auto;font-size:1rem;min-height:52px;">📞 Call 509-251-6096</a>
+</nav>
+
+<header id="site-header">
+  <div class="container">
+    <div class="d-flex align-items-center justify-content-between">
+      <a href="index.html" class="logo"><img src="images/logo.png" alt="Simple Junk Removal" /></a>
+      <nav class="d-none d-lg-flex">
+        <ul id="primary-menu">
+          <li><a href="services.html">Services</a></li>
+          <li><a href="demo.html">Demo &amp; Teardown</a></li>
+          <li><a href="trucks.html">Our Trucks</a></li>
+          <li><a href="about.html">About Us</a></li>
+        </ul>
+      </nav>
+      <div class="d-flex align-items-center gap-3">
+        <a href="tel:5092516096" class="header-cta d-none d-md-inline-flex">📞 509-251-6096</a>
+        <button class="menu-toggle d-lg-none" onclick="openMobileNav()" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="container inner">
+    <p class="section-label">Legal</p>
+    <h1>Privacy <span>Policy</span></h1>
+    <p>How we collect, use, and protect your information.</p>
+  </div>
+</section>
+
+<!-- POLICY CONTENT -->
+<div class="container">
+  <div class="policy-wrap">
+
+    <p class="updated">Last updated: June 4, 2026</p>
+
+    <p>Simple Junk Removal ("we," "us," or "our") operates the website <strong>simplejunkremoval.com</strong> and the associated chat widget. This Privacy Policy explains how we collect, use, and protect information you provide when you contact us or use our services.</p>
+
+    <h2>Information We Collect</h2>
+    <p>When you interact with our website, chat widget, or contact us directly, we may collect:</p>
+    <ul>
+      <li>Name</li>
+      <li>Phone number</li>
+      <li>Email address</li>
+      <li>Service address or general location</li>
+      <li>Details about the junk removal service you need</li>
+    </ul>
+    <p>We collect this information only when you voluntarily provide it — for example, by filling out a contact form, using our chat widget, calling us, or texting us.</p>
+
+    <h2>How We Use Your Information</h2>
+    <p>We use the information we collect to:</p>
+    <ul>
+      <li>Respond to your inquiry and provide a quote</li>
+      <li>Schedule and coordinate your junk removal service</li>
+      <li>Send follow-up messages related to your request or appointment</li>
+      <li>Communicate updates about your job or service</li>
+    </ul>
+    <p>We do not sell, rent, or share your personal information with third parties for marketing purposes. We do not buy or sell leads.</p>
+
+    <h2>SMS / Text Message Consent</h2>
+    <div class="highlight-box">
+      <p><strong>By providing your phone number and initiating contact through our website chat widget, phone call, or text message, you consent to receive SMS text messages from Simple Junk Removal related to your inquiry, quote, or service appointment.</strong></p>
+    </div>
+    <p>Message frequency varies based on your support needs. Standard message and data rates may apply.</p>
+    <p>You can opt out of SMS messages at any time by replying <strong>STOP</strong> to any message we send. After opting out, you will receive one final confirmation message and no further texts. For help, reply <strong>HELP</strong> or call us at <a href="tel:5092516096">509-251-6096</a>.</p>
+    <p>SMS opt-in consent is never shared with or sold to third parties.</p>
+
+    <h2>Chat Widget</h2>
+    <p>Our website uses a chat widget provided by GoHighLevel (leadconnectorhq.com). When you use the chat widget, information you provide may be stored and processed through GoHighLevel's platform to manage your inquiry. GoHighLevel's own privacy policy governs their handling of data.</p>
+
+    <h2>Cookies &amp; Analytics</h2>
+    <p>Our website may use cookies and similar tracking technologies to understand how visitors use our site. This helps us improve the user experience. You can disable cookies through your browser settings, though some features of the site may not function as expected.</p>
+
+    <h2>Data Retention</h2>
+    <p>We retain your contact information only as long as necessary to provide our services and fulfill any legal obligations. If you would like your information removed from our records, please contact us using the information below.</p>
+
+    <h2>Your Rights</h2>
+    <p>You have the right to:</p>
+    <ul>
+      <li>Request access to the personal information we hold about you</li>
+      <li>Request correction of inaccurate information</li>
+      <li>Request deletion of your information</li>
+      <li>Opt out of SMS communications at any time by replying STOP</li>
+    </ul>
+
+    <h2>Children's Privacy</h2>
+    <p>Our website and services are not directed to children under 13. We do not knowingly collect personal information from children under 13.</p>
+
+    <h2>Changes to This Policy</h2>
+    <p>We may update this Privacy Policy from time to time. When we do, we will update the "Last updated" date at the top of this page. We encourage you to review this page periodically.</p>
+
+    <h2>Contact Us</h2>
+    <p>If you have any questions about this Privacy Policy or how we handle your information, please contact us:</p>
+    <ul>
+      <li><strong>Simple Junk Removal</strong></li>
+      <li>Coeur d'Alene, ID &amp; Spokane, WA</li>
+      <li>Phone: <a href="tel:5092516096">509-251-6096</a></li>
+      <li>Website: <a href="https://simplejunkremoval.com">simplejunkremoval.com</a></li>
+    </ul>
+
+  </div>
+</div>
+
+<footer>
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-lg-5">
+        <a href="index.html" class="logo d-inline-block mb-2"><img src="images/logo.png" alt="Simple Junk Removal" /></a>
+        <p class="footer-desc">Owner-operated junk removal serving Coeur d'Alene, Spokane, Post Falls &amp; surrounding areas.</p>
+        <a href="tel:5092516096" class="footer-phone">509-251-6096</a>
+      </div>
+      <div class="col-6 col-lg-3">
+        <h5>Services</h5>
+        <ul>
+          <li><a href="services.html">Junk Removal</a></li>
+          <li><a href="services.html">Residential</a></li>
+          <li><a href="services.html">Commercial</a></li>
+          <li><a href="demo.html">Demo &amp; Teardown</a></li>
+          <li><a href="index.html#pricing">Pricing</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-lg-3">
+        <h5>Company</h5>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="index.html#reviews">Reviews</a></li>
+          <li><a href="index.html#areas">Service Areas</a></li>
+          <li><a href="index.html#faq">FAQ</a></li>
+          <li><a href="privacy-policy.html">Privacy Policy</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Simple Junk Removal. Coeur d'Alene, ID &amp; Spokane, WA.</p>
+      <p>Owned &amp; operated by Frank &amp; Romen.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  function openMobileNav() { document.getElementById('mobile-nav').classList.add('open'); document.getElementById('mobileOverlay').classList.add('open'); document.body.style.overflow='hidden'; }
+  function closeMobileNav() { document.getElementById('mobile-nav').classList.remove('open'); document.getElementById('mobileOverlay').classList.remove('open'); document.body.style.overflow=''; }
+</script>
+<script src="https://widgets.leadconnectorhq.com/loader.js" data-resources-url="https://widgets.leadconnectorhq.com/chat-widget/loader.js" data-widget-id="6a21b7b19372a70f7d87ccb6" data-source="WEB_USER"></script>
+</body>
+</html>
