@@ -1234,6 +1234,49 @@
       .price-card { border-right: none; border-bottom: 1px solid #222; }
       .price-card:last-child { border-bottom: none; }
     }
+
+    /* ══ OUR OFFER ══ */
+    #our-offer { background: var(--black); }
+    .offer-intro { max-width:620px; margin:0 auto 52px; text-align:center; }
+    .offer-intro p { color:rgba(255,255,255,0.45); font-size:1rem; line-height:1.75; margin-top:18px; }
+    .benefits-grid { display:grid; grid-template-columns:1fr; gap:1px; background:#1c1c1c; border:1px solid #1c1c1c; }
+    .benefit-card { background:var(--black); padding:36px 28px 32px; display:flex; flex-direction:column; gap:14px; transition:background 0.2s; }
+    .benefit-card:hover { background:#0f0f0f; }
+    .benefit-icon { width:50px; height:50px; border-radius:10px; background:rgba(61,190,92,0.1); border:1px solid rgba(61,190,92,0.22); display:flex; align-items:center; justify-content:center; flex-shrink:0; }
+    .benefit-icon svg { width:24px; height:24px; stroke:var(--g); fill:none; stroke-width:2; stroke-linecap:round; stroke-linejoin:round; }
+    .benefit-title { font-family:var(--disp); font-size:1.18rem; font-weight:900; text-transform:uppercase; letter-spacing:0.04em; color:var(--white); line-height:1.1; }
+    .benefit-desc { font-size:0.875rem; color:rgba(255,255,255,0.48); line-height:1.7; }
+    .guarantee-bar { margin-top:40px; background:rgba(61,190,92,0.07); border:1px solid rgba(61,190,92,0.25); padding:24px 32px; display:flex; align-items:center; gap:20px; flex-wrap:wrap; }
+    .guarantee-bar-icon { width:48px; height:48px; background:var(--g); border-radius:50%; display:flex; align-items:center; justify-content:center; flex-shrink:0; }
+    .guarantee-bar-icon svg { width:22px; height:22px; stroke:var(--black); fill:none; stroke-width:2.5; stroke-linecap:round; stroke-linejoin:round; }
+    .guarantee-bar-text strong { display:block; font-family:var(--disp); font-size:1rem; font-weight:900; text-transform:uppercase; letter-spacing:0.06em; color:var(--white); margin-bottom:3px; }
+    .guarantee-bar-text p { font-size:0.875rem; color:rgba(255,255,255,0.5); }
+    @media (min-width:560px) { .benefits-grid { grid-template-columns:repeat(2,1fr); } }
+    @media (min-width:900px) { .benefits-grid { grid-template-columns:repeat(3,1fr); } }
+
+    /* ══ CLEAR SPACE PROJECT ══ */
+    #clear-space { background: var(--cream); }
+    .csp-layout { display:grid; grid-template-columns:1fr; gap:56px; align-items:start; }
+    .csp-eyebrow { display:flex; align-items:center; gap:10px; margin-bottom:18px; }
+    .csp-tag { background:var(--g); color:var(--black); font-family:var(--disp); font-size:0.62rem; font-weight:900; letter-spacing:0.14em; text-transform:uppercase; padding:4px 10px; }
+    .csp-subhead { font-family:var(--disp); font-size:0.95rem; font-weight:800; text-transform:uppercase; letter-spacing:0.08em; color:#999; margin:6px 0 28px; }
+    .csp-pull-quote { font-family:var(--disp); font-size:clamp(1.9rem,4.5vw,3rem); font-weight:900; text-transform:uppercase; line-height:1.05; color:var(--text); border-left:5px solid var(--g); padding-left:22px; margin:0 0 32px; }
+    .csp-pull-quote em { color:var(--g); font-style:normal; }
+    .csp-body p { color:#4a4a4a; font-size:0.975rem; line-height:1.78; margin-bottom:14px; }
+    .csp-body p:last-child { margin-bottom:0; }
+    .csp-counter { display:flex; align-items:center; gap:20px; padding:24px 0; border-top:1px solid rgba(0,0,0,0.1); border-bottom:1px solid rgba(0,0,0,0.1); margin:32px 0 36px; }
+    .csp-count-num { font-family:var(--disp); font-size:3.8rem; font-weight:900; color:var(--g); line-height:1; }
+    .csp-count-label strong { display:block; font-size:1rem; font-weight:600; color:var(--text); margin-bottom:2px; }
+    .csp-count-label span { font-size:0.85rem; color:#888; }
+    .csp-cta-note { margin-top:12px; font-size:0.82rem; color:#999; line-height:1.55; }
+    .btn-warm { background:#e8a838; color:var(--black); border:2px solid rgba(0,0,0,0.15); box-shadow:0 6px 22px rgba(232,168,56,0.35); }
+    .btn-warm:hover { background:#d4972e; transform:translateY(-3px); box-shadow:0 12px 36px rgba(232,168,56,0.45); }
+    .csp-photo { overflow:hidden; box-shadow:0 12px 48px rgba(0,0,0,0.1); }
+    .csp-photo img { width:100%; height:420px; object-fit:cover; object-position:center top; display:block; }
+    .csp-photo-cap { padding:18px 20px; background:var(--white); border-top:3px solid var(--g); }
+    .csp-photo-cap p { font-size:0.85rem; color:#777; line-height:1.5; }
+    .csp-photo-cap strong { color:var(--text); }
+    @media (min-width:880px) { .csp-layout { grid-template-columns:1fr 1fr; gap:72px; align-items:center; } }
   </style>
 </head>
 <body>
@@ -1421,6 +1464,60 @@
     </div>
   </div>
 </section>
+
+<!-- ─── OUR OFFER ─── -->
+<section id="our-offer" class="section-pad">
+  <div class="container">
+    <div class="offer-intro">
+      <p class="label label-center" style="margin-bottom:14px;">Every Single Job</p>
+      <h2 class="headline headline-lg white">What You Get<br><span class="green">With Every Job.</span></h2>
+      <p>We charge by volume — so you only pay for the exact space your items take up in our truck. Nothing more. You point at what needs to go and we handle everything — the lifting, the hauling, and the cleanup.</p>
+    </div>
+    <div class="benefits-grid reveal">
+      <div class="benefit-card">
+        <div class="benefit-icon"><svg viewBox="0 0 24 24"><rect x="1" y="4" width="14" height="12" rx="1.5"/><path d="M15 8h3.5l2.5 4v4h-6V8z"/><circle cx="5" cy="18.5" r="2"/><circle cx="17.5" cy="18.5" r="2"/></svg></div>
+        <div class="benefit-title">Volume-Based Pricing</div>
+        <div class="benefit-desc">You pay for exactly the space your items take up — not an estimate, not an hourly rate. Exact space, exact cost. Locked in before we touch anything.</div>
+      </div>
+      <div class="benefit-card">
+        <div class="benefit-icon"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg></div>
+        <div class="benefit-title">Full Liability Coverage</div>
+        <div class="benefit-desc">Every job is fully insured. Your home and property are protected from the moment we arrive to the moment we leave. No exceptions.</div>
+      </div>
+      <div class="benefit-card">
+        <div class="benefit-icon"><svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+        <div class="benefit-title">Uniformed Two-Man Crew</div>
+        <div class="benefit-desc">A professional, uniformed two-person crew shows up ready to work — no random contractors, no subcontractors. The same team that answered your call.</div>
+      </div>
+      <div class="benefit-card">
+        <div class="benefit-icon"><svg viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div>
+        <div class="benefit-title">Owner On Every Job</div>
+        <div class="benefit-desc">Frank or Romen personally on-site. You never deal with a crew you haven't met. You deal with the owners who answered your call — every single time.</div>
+      </div>
+      <div class="benefit-card">
+        <div class="benefit-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="9 12 11 14.5 15 9.5"/></svg></div>
+        <div class="benefit-title">Satisfaction Guarantee</div>
+        <div class="benefit-desc">We guarantee every job. If you're not completely satisfied, you don't pay. Period. No negotiating, no fine print — done right or it's on us.</div>
+      </div>
+      <div class="benefit-card">
+        <div class="benefit-icon"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="8" y1="13" x2="16" y2="13"/><line x1="8" y1="17" x2="13" y2="17"/></svg></div>
+        <div class="benefit-title">Documented Disposal</div>
+        <div class="benefit-desc">After every job we send you documentation of exactly where your items went — donated, recycled, or disposed at a licensed facility. Never illegally dumped. Ever.</div>
+      </div>
+    </div>
+    <div class="guarantee-bar reveal">
+      <div class="guarantee-bar-icon"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div>
+      <div class="guarantee-bar-text">
+        <strong>100% Satisfaction Guarantee</strong>
+        <p>You don't pay unless you're completely satisfied. After every job you get documentation of where everything went. That's our promise — no fine print.</p>
+      </div>
+    </div>
+    <div style="margin-top:40px;text-align:center;" class="reveal">
+      <a href="tel:5092516096" class="btn btn-green">📞 Get Your Free Quote — 509-251-6096</a>
+    </div>
+  </div>
+</section>
+
 
 <!-- ─── ABOUT ─── -->
 <section id="about">
@@ -1648,6 +1745,46 @@
     </div>
   </div>
 </section>
+
+<!-- ─── CLEAR SPACE PROJECT ─── -->
+<section id="clear-space" class="section-pad">
+  <div class="container">
+    <div class="csp-layout">
+      <div>
+        <div class="csp-eyebrow reveal">
+          <span class="label">Community</span>
+          <span class="csp-tag">Monthly</span>
+        </div>
+        <h2 class="headline headline-lg reveal" style="margin-bottom:6px;">We're More Than<br><span class="green">Junk Removal.</span></h2>
+        <p class="csp-subhead reveal">The Clear Space Project — Our Monthly Community Commitment</p>
+        <div class="csp-pull-quote reveal">"This is our<br>community.<br><em>We want to<br>take care of it."</em></div>
+        <div class="csp-body reveal">
+          <p>Every single month Simple Junk Removal selects one person or family in CDA and Spokane who needs their space cleared and just can't afford it — and we do it completely free.</p>
+          <p>No application. No fine print. Just two brothers who want to give back to the community that gave them a chance when they were just starting out.</p>
+          <p>If you know someone who deserves it — send us their story. We'll take care of the rest.</p>
+        </div>
+        <div class="csp-counter reveal">
+          <div class="csp-count-num">12</div>
+          <div class="csp-count-label">
+            <strong>Families Helped So Far</strong>
+            <span>One free job every month — and growing.</span>
+          </div>
+        </div>
+        <a href="tel:5092516096" class="btn btn-warm reveal">&#9829;&nbsp; Nominate Someone</a>
+        <p class="csp-cta-note">Call or text 509-251-6096 with their story.<br>No forms. No applications. Just tell us about them.</p>
+      </div>
+      <div class="reveal">
+        <div class="csp-photo">
+          <img src="images/clear-space-job.jpg" alt="Simple Junk Removal team with happy customer after Clear Space Project job" loading="lazy" />
+          <div class="csp-photo-cap">
+            <p><strong>The Clear Space Project in action.</strong> Two brothers, a cleared space, and two very happy neighbors.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 
 <!-- ─── SERVICE AREAS ─── -->
 <section id="areas" class="section-pad">
